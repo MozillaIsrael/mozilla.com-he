@@ -1,0 +1,39 @@
+<?php
+    // The $body_* variables are for compatibility with pre-existing css
+    $page_title = 'Mozilla | Firefox עודכן';
+    $body_id    = 'home';
+    $body_class = '';
+    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+?>
+
+<body id="home">
+
+<div id="main">
+
+<h1>עודכנת לגירסה החדשה ביותר של Firefox</h1>
+
+<p>למידע אודות מה שנכלל בעדכון זה, ראה את <a
+href="http://he.www.mozilla.com/he/firefox/2.0/releasenotes/">הערות השיחרור</a>.</p>
+
+<h2>הידעת?</h2>
+
+<h3><a href="http://he.add-ons.mozilla.com/he/firefox/">תוספות עבור Firefox</a></h3>
+<p>אתה יכול לבחור בין מאות תוספות חופשיות להרחבת הפונקציונליות של Firefox לתכונות
+חדשות ולהפוך את המראה והתחושה הכללית של הדפדפן ליותר אישית כדי להתאים לסגנון שלך.</p>
+
+
+<!--Note: below is only for locales that *DO NOT* ship with a dictionary  --> 
+<h3>הוסף מילון עברי לבודק האיות</h3> 
+<p><a href="https://he.add-ons.mozilla.com/he/firefox/2.0/dictionaries/">התקן מילון
+כעת</a></p>
+
+
+<p><a href="javascript:window.home();">עבור לדף הבית שלי</a></p>
+
+
+</div> <!-- end #main -->
+
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+?>

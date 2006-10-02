@@ -1,0 +1,39 @@
+# All our pages hit this prefetch script.  This will determine the language and
+# forward them to the right place.
+Action init /includes/global/prefetch.php?
+AddHandler init .html
+
+# By handling the 404s with our prefetch script, we can give localized
+# error messages
+ErrorDocument 404 /includes/global/prefetch.php
+
+# Setup URL Prettiness
+RewriteEngine On
+
+# Support the first run page.
+# Example:
+#   http://{locale}.www.mozilla.com/{locale}/firefox/2.0/firstrun
+
+RewriteRule ^(.*)?/firefox/(.*)/firstrun$  /firefox/firstrun.html?version=$2
+
+# Support the first run page.
+# Example:
+#   http://{locale}.www.mozilla.com/{locale}/firefox/2.0/whatsnew
+
+RewriteRule ^(.*)?/firefox/(.*)/whatsnew$  /firefox/whatsnew.html?version=$2
+
+# Support the portal pages.
+# Examples:
+#    Getting Started -      http://{locale}.www.mozilla.com/{locale}/firefox/central/
+#    Help and Tutorials -   http://{locale}.www.mozilla.com/{locale}/firefox/help/
+#    Customize Firefox -    http://{locale}.www.mozilla.com/{locale}/firefox/customize/
+#    Get Involved -         http://{locale}.www.mozilla.com/{locale}/firefox/community/
+#    About Us -             http://{locale}.www.mozilla.com/{locale}/firefox/about/ 
+#    Contact Us -           http://{locale}.www.mozilla.com/{locale}/firefox/contact/ 
+
+RewriteRule firefox/central[/]?$    firefox/central.html
+RewriteRule firefox/help[/]?$       firefox/help.html
+RewriteRule firefox/customize[/]?$  firefox/customize.html
+RewriteRule firefox/community[/]?$  firefox/community.html
+RewriteRule firefox/about[/]?$      firefox/about.html
+RewriteRule firefox/contact[/]?$    firefox/contact.html
