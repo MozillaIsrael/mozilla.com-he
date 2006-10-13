@@ -5,4 +5,5 @@ AddHandler init .html
 
 # By handling the 404s with our prefetch script, we can give localized
 # error messages
+ErrorDocument 403 /includes/global/prefetch.php
 ErrorDocument 404 /includes/global/prefetch.php
