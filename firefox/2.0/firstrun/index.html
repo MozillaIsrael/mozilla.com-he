@@ -1,40 +1,40 @@
 <?php
     // The $body_* variables are for compatibility with pre-existing css
     $page_title = 'Mozilla | ברוכים הבאים ל־Firefox';
-    $body_id    = 'home';
-    $body_class = '';
-    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+    $body_id    = 'firstrun';
+    $body_class = 'portal-page';
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
-<body id="home">
-
-<div id="main">
+<div class="portal-box">
+<div class="portal-box-interior">
 
 <p>לחץ על כפתור הסגירה בלשונית זו כדי לעבור לדף הבית שלך</p>
 
-<h1>ברוכים הבאים ל־Firefox!</h1>
+<div class="portal-box-header">
+    <h1>ברוכים הבאים ל־Firefox!</h1>
+    <p>אתה עומד לגלות למה מליוני אנשים ברחבי העולם עברו ל־Firefox עבור חוויה מקוונת טובה יותר.</p>
+</div>
 
-<h2>אתה עומד לגלות למה מליוני אנשים ברחבי העולם עברו ל־Firefox עבור חוויה מקוונת טובה
-יותר.</h2>
+<div class="portal-box-contents">
 
-<p>חווה את ההבדל. Firefox מפותח ונתמך על־ידי <a
-href="http://he.wwww.mozilla.com/he/firefox/community/">Mozilla</a>, קהילה גלובלית
-העובדת יחדיו כדי לעשות את הרשת למקום טוב יותר לכולם.</p>
+    <p>חווה את ההבדל. Firefox מפותח ונתמך על־ידי <a href="http://he.wwww.mozilla.com/he/firefox/community/">Mozilla</a>, קהילה גלובלית
+    העובדת יחדיו כדי לעשות את הרשת למקום טוב יותר לכולם.</p>
 
-<p><a href="http://he.www.mozilla.com/he/firefox/central/">למד עוד אודות התכונות של
-Firefox</a>, או עקוב אחר ההוראות בראש עמוד זה כדי לסגור את הלשונית הזו ולעבור ישירות
-לדף הבית שלך.</p>
+    <p><a href="http://he.www.mozilla.com/he/firefox/central/">למד עוד אודות התכונות של
+    Firefox</a>, או עקוב אחר ההוראות בראש עמוד זה כדי לסגור את הלשונית הזו ולעבור ישירות
+    לדף הבית שלך.</p>
 
-<!--Note: below is only for locales that *DO NOT* ship with a dictionary  --> 
-<h3>הוסף מילון עברי לבודק האיות</h3> 
-<p><a href="https://he.add-ons.mozilla.com/he/firefox/2.0/dictionaries/">התקן מילון
-כעת</a></p>
+    <!--Note: below is only for locales that *DO NOT* ship with a dictionary  --> 
+    <h3>הוסף מילון עברי לבודק האיות</h3> 
+    <p><a href="https://he.add-ons.mozilla.com/he/firefox/2.0/dictionaries/">התקן מילון כעת</a></p>
 
-<p><a href="javascript:window.home();">עבור לדף הבית שלי</a></p>
+    <p><a href="javascript:window.home();">עבור לדף הבית שלי</a></p>
 
-</div> <!-- end #main -->
-
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
 ?>

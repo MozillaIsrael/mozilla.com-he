@@ -1,51 +1,56 @@
 <?php
     // The $body_* variables are for compatibility with pre-existing css
     $page_title = 'Mozilla | אודות Mozilla';
-    $body_id    = 'home';
-    $body_class = '';
-    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+    $body_id    = 'about';
+    $body_class = 'portal-page';
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
-<body id="home">
+<div class="portal-box">
+<div class="portal-box-interior">
 
-<div id="main">
-
+<div class="portal-box-header">
 <h1>Mozilla</h1> 
-<h3>טוב לרשת. טוב לעולם.</h3>
+<p>טוב לרשת. טוב לעולם.</p>
+</div>
 
-<p>Mozilla היא <a href="http://he.wwww.mozilla.com/he/firefox/community/">קהילה</a>
-בנלאומית שפועלת בתור <a
-href="http://www.mozilla.org/foundation/">ארגון לטובת הכלל</a> לעזור לאינטרנט להישאר
-משאב משותף כלל־עולמי. מונעים בלהט ומונחים על־ידי אחראיות ציבורית, אנו שואפים ליצור
-רשת שתהיה טובה יותר לכולנו, בהווה ובעתיד.</p>
+<div class="portal-box-contents">
 
-<p>אנו מתחזקים את שלמות חזוננו ואת פעולותנו דרך 
- <a href="http://www.mozilla.org/hacking/module-ownership.html">תהליך פיתוח</a> שקוף
- וברור, המבטיח פתיחות, כנות, אחריות ואמון.</p>
+    <p>Mozilla היא <a href="http://he.wwww.mozilla.com/he/firefox/community/">קהילה</a>
+    בנלאומית שפועלת בתור <a
+    href="http://www.mozilla.org/foundation/">ארגון לטובת הכלל</a> לעזור לאינטרנט להישאר
+    משאב משותף כלל־עולמי. מונעים בלהט ומונחים על־ידי אחראיות ציבורית, אנו שואפים ליצור
+    רשת שתהיה טובה יותר לכולנו, בהווה ובעתיד.</p>
 
- <p><a href="http://www.mozilla.com/he/products/">מוצרי התוכנה</a> וה<a
- href="http://www.mozilla.org/projects/">טכנולוגיות</a> עטורי השבחים ומבוססי קוד־פתוח
- שלנו מוצעים חינם אין כסף לאנשים בכל מקום ביותר מ־40 שפות.</p>
+    <p>אנו מתחזקים את שלמות חזוננו ואת פעולותנו דרך 
+     <a href="http://www.mozilla.org/hacking/module-ownership.html">תהליך פיתוח</a> שקוף
+     וברור, המבטיח פתיחות, כנות, אחריות ואמון.</p>
 
- <p>המטה של Mozilla ממוקם ב־<a
- href="http://www.mozilla.com/he/about/contact.html#hq">מאונטיין וויו, קליפורניה</a>
- עם משרדים אזוריים ב<a
- href="http://www.mozilla.com/he/about/contact.html#japan">טוקיו</a> ו<a
- href="http://www.mozilla.com/he/about/contact.html#europe">פריס</a>.
+     <p><a href="http://www.mozilla.com/he/products/">מוצרי התוכנה</a> וה<a
+     href="http://www.mozilla.org/projects/">טכנולוגיות</a> עטורי השבחים ומבוססי קוד־פתוח
+     שלנו מוצעים חינם אין כסף לאנשים בכל מקום ביותר מ־40 שפות.</p>
+
+     <p>המטה של Mozilla ממוקם ב־<a
+     href="http://www.mozilla.com/he/about/contact.html#hq">מאונטיין וויו, קליפורניה</a>
+     עם משרדים אזוריים ב<a
+     href="http://www.mozilla.com/he/about/contact.html#japan">טוקיו</a> ו<a
+     href="http://www.mozilla.com/he/about/contact.html#europe">פריס</a>.
 
 
- <h3>Mozilla בישראל</h3>
+     <h3>Mozilla בישראל</h3>
 
- <p>הקישורים הבאים מספקים מידע נוסף אודות Mozilla בישראל.</p>
+     <p>הקישורים הבאים מספקים מידע נוסף אודות Mozilla בישראל.</p>
 
- <ul>
- <li><a href="http://mozilla.org.il">מוזילה ישראל</a></li>
- <li><a href="http://mozilla.org.il/board">הפורומים של מוזילה ישראל</a></li>
- <li><a href="http://mozilla.org.il/news">חדשות מוזילה</a></li>
- </ul>
+     <ul>
+     <li><a href="http://mozilla.org.il">מוזילה ישראל</a></li>
+     <li><a href="http://mozilla.org.il/board">הפורומים של מוזילה ישראל</a></li>
+     <li><a href="http://mozilla.org.il/news">חדשות מוזילה</a></li>
+    </ul>
 
-</div> <!-- end #main -->
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
 ?>

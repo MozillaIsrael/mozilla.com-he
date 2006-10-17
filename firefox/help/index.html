@@ -1,18 +1,22 @@
 <?php
     // The $body_* variables are for compatibility with pre-existing css
     $page_title = 'Mozilla | עזרה וערכות לימוד';
-    $body_id    = 'home';
-    $body_class = '';
-    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+    $body_id    = 'help';
+    $body_class = 'portal-page';
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
-<body id="home">
+<div class="portal-box">
+<div class="portal-box-interior">
 
-<div id="main">
+<div class="portal-box-header">
+    <h1>עזרה וערכות לימוד</h1>
+</div>
 
-<h1>עזרה וערכות לימוד</h1>
+<div class="portal-box-contents">
 
-<h2>קבלת עזרה</h2>
+
+<h3>קבלת עזרה</h3>
 <p>Firefox מגיע עם מערכת עזרה מלאה. כדי לגשת לעזרה של Firefox, לחץ על התפריט "עזרה"
 ובחר ב־"עזרה עבור Firefox".</p>
 
@@ -27,9 +31,12 @@ Mozilla</a></li>
 <li><a href="http://mozilla.org.il/support">דף התמיכה של Mozilla ישראל</a></li>
 </ul>
 
-</div> <!-- end #main -->
+
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
 
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
 ?>

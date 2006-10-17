@@ -1,16 +1,20 @@
 <?php
     // The $body_* variables are for compatibility with pre-existing css
     $page_title = 'Mozilla | התאמה אישית של Firefox';
-    $body_id    = 'home';
-    $body_class = '';
-    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+    $body_id    = 'customize';
+    $body_class = 'portal-page';
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
-<body id="home">
+<div class="portal-box">
+<div class="portal-box-interior">
 
-<div id="main">
+<div class="portal-box-header">
+    <h1>התאמה אישית של Firefox</h1>
+</div>
 
-<h1>התאמה אישית של Firefox</h1>
+<div class="portal-box-contents">
+
 
 <p>אתר ה<a href="http://he.add-ons.mozilla.com/he/firefox/">תוספות עבור Firefox</a>
 מאפשר לך להרחיב את הפונקציונליות של Firefox לתכונות חדשות ולהפוך את המראה והתחושה
@@ -23,9 +27,12 @@
 מילונים לבודק האיות</a></li>
 </ul>
 
-</div> <!-- end #main -->
+
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
 
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
 ?>
