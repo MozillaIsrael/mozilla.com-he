@@ -1,24 +1,33 @@
 <?php
     // The $body_* variables are for compatibility with pre-existing css
     $page_title = 'Mozilla | היה מעורב';
-    $body_id    = 'home';
-    $body_class = '';
-    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+    $body_id    = 'community';
+    $body_class = 'portal-page';
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
-<body id="home">
+<div class="portal-box">
+<div class="portal-box-interior">
 
-<div id="main">
+<div class="portal-box-header">
+    <h1>היה מעורב ב־Mozilla</h1>
+    <p>אנו קהילה גלובלית העובדת יחדיו כדי להפוך את הרשת למקום טוב יותר לכולם.</p>
+</div>
 
-<h1>היה מעורב ב־Mozilla</h1>
-<h2>אנו קהילה גלובלית העובדת יחדיו כדי להפוך את הרשת למקום טוב יותר לכולם.</h2>
-
+<div class="portal-box-contents">
 <p>רוצה לסייע? מצויין! אינך צריך להיות אשף C++ (או בכלל לדעת מה זה אומר!) ואינך צריך
 להשקיע זמן רב.</p>
 
-<h3 id="easy">דרכים פשוטות שתהיה מעורב</h3>
 
-<ul> 
+<div class="side-box side-box-left" style="margin-left: 40px;">
+    <div class="side-box-title">
+        <h3 class="side-box-title" id="easy">דרכים פשוטות שתהיה מעורב</h3>
+    </div>
+
+
+
+
+<ul class="side-box-contents"> 
 <li><a
 href="http://www.mozilla.com/he/products/">ספר למשפחה שלך, לחברים ולקולגות על המוצרים
 של Mozilla</a></li>
@@ -34,10 +43,15 @@ href="http://www.mozilla.com/he/products/">ספר למשפחה שלך, לחבר�
 Mozilla</a></li>
 
 </ul>
+</div>
 
-<h3 id="tech">לאנשים יותר טכניים</h3>
+<div class="side-box side-box-right" style="margin-right: 40px;">
+    <div class="side-box-title">
+        <h3 class="side-box-title-contents" id="tech">לאנשים יותר טכניים</h3>
+    </div>
 
-<ul>
+
+<ul class="side-box-contents">
 <li><a href="http://www.mozilla.org/quality/">הצטרף לצוות בקרת האיכות ודווח על באגים
 ובעיות אחרות שדורשים תיקון</a></li>
 <li><a href="http://developer.mozilla.org/en/docs/Devmo:How_to_Help">סייע בכתיבה או
@@ -46,11 +60,14 @@ Mozilla</a></li>
 האקולוגית של Firefox באמצעות פיתוח תוספות</a></li>
 <li><a href="http://www.mozilla.org/hacking/">תקן באג או תרום קוד לפרוייקט</a></li>
 </ul>
+</div>
 
-</ul>
+<div style="clear: both;"></div>
 
-</div> <!-- end #main -->
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
 ?>
