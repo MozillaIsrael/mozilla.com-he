@@ -7,12 +7,12 @@ $dynamic_top_menu = <<<DYNAMIC_TOP_MENU
             <h2>{$GLOBALS['__l10n_moz']['Navigation']}</h2>
 
             <ul>
-                <li id="menu_press"><a href="/press/">{$GLOBALS['__l10n_moz']['Press area']}</a></li>
-                <li id="menu_aboutus"><a href="/about/">{$GLOBALS['__l10n_moz']['About']}</a></li>
+                <li id="menu_press"><a href="/{$lang}/press/">{$GLOBALS['__l10n_moz']['Press area']}</a></li>
+                <li id="menu_aboutus"><a href="/{$lang}/about/">{$GLOBALS['__l10n_moz']['About']}</a></li>
                 <li id="menu_store"><a href="http://store.mozilla-europe.org/{$lang}/">{$GLOBALS['__l10n_moz']['Store']}</a></li>
-                <li id="menu_contribute"><a href="/contribute/">{$GLOBALS['__l10n_moz']['Donate']}</a></li>
-                <li id="menu_support"><a href="/support/">{$GLOBALS['__l10n_moz']['Support']}</a></li>
-                <li id="menu_products"><a href="/products/">{$GLOBALS['__l10n_moz']['Products']}</a></li>
+                <li id="menu_contribute"><a href="/{$lang}/contribute/">{$GLOBALS['__l10n_moz']['Donate']}</a></li>
+                <li id="menu_support"><a href="/{$lang}/support/">{$GLOBALS['__l10n_moz']['Support']}</a></li>
+                <li id="menu_products"><a href="/{$lang}/products/">{$GLOBALS['__l10n_moz']['Products']}</a></li>
             </ul>
         </div>
         <!-- end #nav-main -->
