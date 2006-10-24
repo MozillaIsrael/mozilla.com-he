@@ -1,23 +1,29 @@
 <?php
 
-$dynamic_top_menu = <<<DYNAMIC_TOP_MENU
+        $dynamic_top_menu_array = array (
+            "{$GLOBALS['__l10n_moz']['Products']}"   => array(
+                                                            'list-id' => 'menu_products',
+                                                            'href'    => "/{$lang}/products/"
+                                                            ),
+            "{$GLOBALS['__l10n_moz']['Add-ons']}"    => array(
+                                                            'list-id' => 'menu_addons',
+                                                            'href'    => 'https://addons.stage.mozilla.com/firefox/'
+                                                            ),
+            "{$GLOBALS['__l10n_moz']['Support']}"    => array(
+                                                            'list-id' => 'menu_support',
+                                                            'href'    => "/{$lang}/support/"
+                                                            ),
+            "{$GLOBALS['__l10n_moz']['Developers']}" => array(
+                                                            'list-id' => 'menu_developers',
+                                                            'href'    => 'http://developer.mozilla.org/'
+                                                            ),
+            "{$GLOBALS['__l10n_moz']['About']}"      => array(
+                                                            'list-id' => 'menu_aboutus',
+                                                            'href'    => "/{$lang}/about/"
+                                                            )
+            );
 
-        <!-- start #nav-main -->
-        <div id="nav-main">
-            <h2>{$GLOBALS['__l10n_moz']['Navigation']}</h2>
-
-            <ul>
-                <li id="menu_press"><a href="/{$lang}/press/">{$GLOBALS['__l10n_moz']['Press area']}</a></li>
-                <li id="menu_aboutus"><a href="/{$lang}/about/">{$GLOBALS['__l10n_moz']['About']}</a></li>
-                <li id="menu_store"><a href="http://store.mozilla-europe.org/{$lang}/">{$GLOBALS['__l10n_moz']['Store']}</a></li>
-                <li id="menu_contribute"><a href="/{$lang}/contribute/">{$GLOBALS['__l10n_moz']['Donate']}</a></li>
-                <li id="menu_support"><a href="/{$lang}/support/">{$GLOBALS['__l10n_moz']['Support']}</a></li>
-                <li id="menu_products"><a href="/{$lang}/products/">{$GLOBALS['__l10n_moz']['Products']}</a></li>
-            </ul>
-        </div>
-        <!-- end #nav-main -->
-
-DYNAMIC_TOP_MENU;
+        $dynamic_top_menu = buildDynamicTopMenuString($dynamic_top_menu_array, $breadcrumbs);
 
         $textdir = 'rtl';
 
