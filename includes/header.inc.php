@@ -7,7 +7,7 @@
                                                             ),
             "{$GLOBALS['__l10n_moz']['Add-ons']}"    => array(
                                                             'list-id' => 'menu_addons',
-                                                            'href'    => 'https://addons.stage.mozilla.com/firefox/'
+                                                            'href'    => 'https://addons.mozilla.org/'
                                                             ),
             "{$GLOBALS['__l10n_moz']['Support']}"    => array(
                                                             'list-id' => 'menu_support',
