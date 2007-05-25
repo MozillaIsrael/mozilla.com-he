@@ -1,0 +1,42 @@
+<?php
+    // The $body_* variables are for compatibility with pre-existing css
+    $page_title = 'Mozilla | Firefox עודכן';
+    $body_id    = 'whatsnew';
+    $body_class = 'portal-page';
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+?>
+
+<div class="portal-box">
+<div class="portal-box-interior">
+
+<div class="portal-box-header">
+    <h1>עודכנת לגירסה החדשה ביותר של Firefox</h1>
+</div>
+
+<div class="portal-box-contents">
+
+    <p>למידע אודות מה שנכלל בעדכון זה, ראה את <a
+    href="/<?=$lang ?>/firefox/2.0.0.1/releasenotes/">הערות השיחרור</a>.</p>
+
+    <h3>הידעת?</h3>
+
+    <div class="corner-box">
+    <img src="/img/portal-page/firefox-updated-tools-ico.png" alt="" />
+    <p><strong><a href="https://<?=$lang?>.add-ons.mozilla.com/<?=$lang?>/firefox/extensions/">תוספות עבור Firefox</a></strong><br />
+    אתה יכול לבחור בין מאות תוספות חופשיות להרחבת הפונקציונליות של Firefox לתכונות
+    חדשות ולהפוך את המראה והתחושה הכללית של הדפדפן ליותר אישית כדי להתאים לסגנון שלך.</p>
+    </div>
+
+
+    <!--Note: below is only for locales that *DO NOT* ship with a dictionary  --> 
+    <h3>הוסף מילון עברי לבודק האיות</h3> 
+    <p><a href="https://he.add-ons.mozilla.com/he/firefox/2.0/dictionaries/">התקן מילון כעת</a></p>
+
+
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>
