@@ -33,7 +33,7 @@ EXTRA_HEADERS;
 <div id="main-feature">
 <div id="main-feature-background" class="variation<?=mt_rand(1,3)?>">
 	<div class="feature-contents">
-	<script type="text/javascript" src="/js/download.js"></script>
+	<script type="text/javascript" src="/js/download2.js"></script>
 	<h2><img src="/img/firefox-title.png" alt="Firefox 2" width="252" height="55" /></h2>
 	<p>דפדפן עטור הפרסים עכשיו מהיר יותר, מאובטח יותר, ומותאם במלואו לחיים הקוונים שלך. ב־Firefox 2, הוספנו תכונות חדשות שיעשו את החוייה המקוונת שלך אפילו טובה יותר.</p>
 	<script type="text/javascript">
@@ -42,39 +42,7 @@ EXTRA_HEADERS;
         rotateBackgroundForDiv('main-feature-background');
     //-->
     </script>
-	<script type="text/javascript">
-    <!--
-      // Configure the Firefox download write script
-      var gDownloadItemTemplate = "<a onclick=\"javascript:urchinTracker('\/firefox\/download\/0706abtest\/?control');\" href=\"%DOWNLOAD_URL%\" class=\"download-link download-firefox\"><span><strong>הורדת Firefox - חינם<\/strong> <em>%VERSION% for %PLATFORM_NAME%, %LANGUAGE_NAME%&nbsp;(%FILE_SIZE%)<\/em><\/span><\/a>";
-      var gDownloadItemMacOS9 = "<a href=\"\">MacOS 9 וגירסאות קודמות אינן נתמכות<\/a>";
-      var gDownloadItemOtherPlatform = "<a href=\"/<?=$lang?>/firefox/2.0.0.6/releasenotes/#contributedbuilds\">הורד בחינם<\/a>"
-
-      document.writeln("<div class=\"home-download\">");
-      writeDownloadItems("fx");
-      document.writeln("<\/div>");
-      document.writeln("<div class=\"download-other\"><span class=\"other\">");
-	  document.writeln("<a class=\"ancilliaryLink\" href=\"system-requirements.html\">דרישות&nbsp;מערכת<\/a>");
-	  document.writeln(" - <a class=\"ancilliaryLink\" href=\"\/<?=$lang?>\/firefox\/2.0.0.6\/releasenotes\/\">Release&nbsp;Notes<\/a>");
-	  document.writeln(" - <a class=\"ancilliaryLink\" href=\"\/<?=$lang?>\/firefox\/all.html\">מערכות&nbsp;ושפות&nbsp;אחרות<\/a>");
-      document.writeln("<\/div>");
-      document.writeln("<\/span><\/div>");
-      //-->
-     </script>
-     <noscript>
-      <div class="download">
-        <h3>הורד עכשיו (עברית | <a href="http://releases.mozilla.org/pub/mozilla.org/firefox/releases/2.0.0.6/">שפות אחרות</a>)</h3>
-        <ul>
-          <li><a href="http://download.mozilla.org/?product=firefox-2.0.0.6&amp;os=win&amp;lang=he">Windows (5.7MB)</a></li>
-          <li><a href="http://download.mozilla.org/?product=firefox-2.0.0.6&amp;os=linux&amp;lang=he">Linux (9.2MB)</a></li>
-          <li><a href="http://download.mozilla.org/?product=firefox-2.0.0.6&amp;os=osx&amp;lang=he">Mac OSX (18MB)</a></li>
-        </ul>
-      </div>
-		<p>
-		<a class="ancilliaryLink" href="system-requirements.html">דרישות מערכת</a>
-		<a class="ancilliaryLink" href="/<?=$lang?>/firefox/2.0.0.6/releasenotes/">הודעת שיחרור</a>
-		<a class="ancilliaryLink" href="/<?=$lang?>/firefox/2.0.0.6/releasenotes/#contributedbuilds">גירסאות אחרות</a>
-		</p>
-     </noscript>
+    <?php echo $firefoxDetails->getDownloadBlockForLocale('he', array( 'js_replace_links' => true )); ?>
 	</div>
 </div>
 </div>
