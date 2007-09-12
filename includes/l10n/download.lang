@@ -17,8 +17,8 @@
 ;Step 4
 שלב 4
 
-;Thank you for downloading Firefox!
-תודה שהורדת את Firefox! 
+;Thanks for choosing Firefox!
+Thanks for choosing Firefox!
 
 ;You're almost ready to enjoy faster, more customizable, more secure surfing.
 אתה עומד להנות מגלישה מהירה יותר, יותר מותאמת אישית ויותר מאובטחת.
@@ -55,3 +55,7 @@
 
 ;Drag the Firefox icon from the applications folder into the dock. Then, click on Firefox whenever you want to use the web!
 גרור את הצלמית של Firefox מתוך תיקיית היישומים אל המעגן. לאחר מכן, לחץ על Firefox בכל פעם שאתה רוצה להיעזר ברשת!
+
+/* Thunderbird */
+;Thank you <br/> for downloading Thunderbird!
+Thank you <br/> for downloading Thunderbird!
