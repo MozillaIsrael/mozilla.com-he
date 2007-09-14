@@ -1,8 +1,8 @@
 ;Just follow these quick steps to get started:
 עקוב אחר ההוראות הבאות כדי להתחיל:
 
-;Your download will begin shortly&hellip;<br/>If your download does not start after a few seconds, use this <a href="foo1">link</a>.
-ההורדה תתחיל מיד&hellip;<br/>במידה וההורדה לא מתחילה תוך מספר שניות לחץ על <a href="foo1">הקישור הבא</a>.
+;Your download will begin shortly&hellip;<br/>If your download does not start after a few seconds, use this <a href="%s">link</a>.
+ההורדה תתחיל מיד&hellip;<br/>במידה וההורדה לא מתחילה תוך מספר שניות לחץ על <a href="%s">הקישור הבא</a>.
 
 
 ;Step 1
@@ -23,8 +23,8 @@ Thanks for choosing Firefox!
 ;You're almost ready to enjoy faster, more customizable, more secure surfing.
 אתה עומד להנות מגלישה מהירה יותר, יותר מותאמת אישית ויותר מאובטחת.
 
-;Show your support for Mozilla! Get cool Firefox gear at the <a href="foo2">Mozilla Store</a>.
-הראה את תמיכתך ב־Mozilla! קבל בגוד Firefox ב־<a href="foo2">Mozilla Store</a>.
+;Show your support for Mozilla! Get cool Firefox gear at the <a href="%s">Mozilla Store</a>.
+הראה את תמיכתך ב־Mozilla! קבל בגוד Firefox ב־<a href="%s">Mozilla Store</a>.
 
 ;Note: Ogio bag shown here is available in North/South America only.
 שים לב: תיק Ogio שמוצג כאן זמין כעת בצפון ובדרום אמריקה בלבד.
