@@ -11,7 +11,7 @@
                                                             ),
             "{$GLOBALS['__l10n_moz']['Support']}"    => array(
                                                             'list-id' => 'menu_support',
-                                                            'href'    => "http://support.mozilla.com/"
+                                                            'href'    => "/{$lang}/support/"
                                                             ),
             "{$GLOBALS['__l10n_moz']['Developers']}" => array(
                                                             'list-id' => 'menu_developers',
