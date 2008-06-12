@@ -1,0 +1,79 @@
+<?php
+    // The $body_* variables are for compatibility with pre-existing css
+    $page_title = 'מוצרי Mozilla | אבטחה';
+    $body_id    = 'security';
+    $extra_headers = <<<EXTRA_HEADERS
+    <link rel="stylesheet" type="text/css" href="/style/tignish/security.css" media="screen" />
+EXTRA_HEADERS;
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+
+?>
+
+<div id="main-feature">
+	<h2>הדפדפן הבטוח ביותר</h2>
+	<p>Firefox שומר שהמידע הפרטי שלך ישאר פרטי ומונע מהחבר'ה הרעים לדעת מה מעניין אותך ברשת.</p>
+</div>
+
+<ul id="side-menu">
+	<li class="first"><h3><a href="/<?=$lang?>/products/">מוצרים</a> / <a href="/<?=$lang?>/firefox/">Firefox</a></h3></li>
+	<li><span>אבטחה</span></li>
+	<li><a href="/<?=$lang?>/firefox/customize/">התאמה אישית</a></li>
+	<li><a href="/<?=$lang?>/firefox/organic/">100% תוכנה אורגנית</a></li>
+	
+	<li><a href="/<?=$lang?>/firefox/tips/">טיפים וטריקים</a></li>
+	<li><a href="/<?=$lang?>/firefox/<?=LATEST_FIREFOX_VERSION?>/releasenotes/">הערות שחרור</a></li>
+	<li><a href="/<?=$lang?>/firefox/all.html">מערכות ושפות אחרות</a></li>
+</ul>
+
+<div id="main-content">
+
+	<div class="security-intro">
+		<h3>אז איך בעצם אנחנו עושים את זה?</h3>
+		<p>מה שונה ב־Firefox? קודם כל, אנחנו פתוחים. זה אומר שכל אחד מסביב לעולם (ויש לנו אלפי מומחים ששומרים עלינו) יכול לקרוא את הקוד שלנו ולמצוא כשלי אבטחה נקודתיים.</p>
+		<p>כאשר אנחנו שומעים על בעיה, אנו מפשילים את השרוולים ויוצאים מיד לתקן אותה. המטרה שלכם (וגם שלנו) היא לטפל בכל נושא בעייתי, אפילו אם המשמעות היא להודות בזה שאנחנו לא מושלמים.</p>
+		<p>במילים פשוטות, <strong>אבטחת המידע שלכם היא אצלנו בעדיפות העליונה.</strong></p>
+	</div>
+
+	<div class="method-madness">
+		<img src="/img/tignish/security/key.png" alt="יש הגיון בשיגעון" width="150" height="151" />
+		<h3>יש הגיון בשיגעון.</h3>
+		<p>אף אחד לא אוהב את האינטרנט יותר מאיתנו. אבל נוכלים, זבלנים ווירוסים קלי הדק הם איומים אמיתיים, לכן אתם צריכים להגן על עצמכם בזמן הגלישה ברשת.</p>
+	</div>
+
+	<div class="firefox-comes-in">
+		<h3>כאן Firefox נכנס לתמונה.</h3>
+		<p>השימוש ב־Firefox הוא הדרך הבטוחה ביותר לגלישה ברשת כי:</p>
+		<ul>
+			<li><strong>אנחנו לא מנסים להתמודד עם הבעיות לבד.</strong> קהילה בין-לאומית של מומחי אבטחה עובדת מסביב לשעון כדי ליצור לכם סביבת גלישה בטוחה (תודות לדרך שלנו של כתיבת קוד פתוח). זה כמו שהמפקד של המשמר האזרחי אצלכם בשכונה יהיה בוגר סיירת מטכ&quot;ל.</li>
+			<li><strong>אנחנו חושבים על אבטחת המידע שלך בכל שלב בדרך.</strong> מומחי אבטחה עובדים מההתחלה כדי לזהות ולטפל בבעיות שעלולות לצוץ בהמשך עוד לפני כתיבת שורת הקוד הראשונה.</li>
+			<li><strong>אנחנו מובילים ולא מובלים.</strong> אנחנו מנטרים איומים באופן קבוע ומשחררים עדכונים חדשים ל־Firefox כדי להישאר צעד אחד קדימה. הפעילות שלנו בעולם הקוד הפתוח מאפשרת לכל אחד לעזור לנו למצוא ולתקן את נקודות החולשה שלנו.</li>
+		</ul>
+		<p>לפרטים נוספים על האופנים בהם Firefox שומר עליכם ברשת <a href="http://blog.mozilla.com/security" class="external">בקרו בבלוג האבטחה שלנו.</a> (אנגלית)</p>
+	</div>
+
+</div><!-- end #main-content div -->
+
+
+<div id="sidebar">
+	<script type="text/javascript" src="/js/download.js"></script>
+	<?php
+	$_options = array( 'ancillary_links' => true, 'layout' => 'sidebar', 'download_parent_override' => 'sidebar', 'download_product' => 'Free Download');
+	echo $firefoxDetails->getDownloadBlockForLocale($lang, $_options);
+	?>
+	<div class="risk">
+		<h1>האם אתם בסכנה?</h1>
+		<p>מחקר בלתי תלוי מראה, שבשנת 2006 בלבד, משתמשי Internet Explorer היו חשופים לאיומים מקוונים 78% מהזמן. משתמשי Firefox? רק 2%.</p>
+		<img src="/<?=$lang?>/img/3-riskdays-security.png" alt="מתי אתם בסכנה" width="295" height="330" />
+	</div>
+
+	<div class="small-print">
+		<p>”בסכנה“ מוגדר כאפשרות חדירה ידועה ללא טלאי זמין. מקור: <a class="external" href="http://blog.washingtonpost.com/securityfix/2007/01/internet_explorer_unsafe_for_2.html">”משתמשי אינטרנט אקספלורר היו לא בטוחים במשך 284 ימים בשנת 2006“</a> (אנגלית)<br />
+		בריאן קרבס, <em>וושינגטון פוסט</em>, 4/1/2007</p>
+	</div>
+</div>
+
+<div id="divider"></div>
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>

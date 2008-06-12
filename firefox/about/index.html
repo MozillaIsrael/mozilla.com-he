@@ -1,48 +1,36 @@
 <?php
     // The $body_* variables are for compatibility with pre-existing css
-    $page_title = 'Mozilla | אודות Mozilla';
-    $body_id    = 'about';
+    $page_title = 'אודות Mozilla';
+    $body_id    = 'firefox-about';
     $body_class = 'portal-page';
+    $extra_headers = <<<EXTRA_HEADERS
+    <link rel="stylesheet" type="text/css" href="/style/tignish/firefox-about.css" media="screen" />
+
+EXTRA_HEADERS;
     @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
-<div class="portal-box">
-<div class="portal-box-interior">
- 
-<div class="portal-box-header">
-<h1><img src="/img/portal-page/about-title.png" alt="Mozilla" height="32" width="132" /></h1> 
-<p>טוב לרשת. טוב לעולם.</p>
+<div id="main-feature">
+	<h2>טוב לרשת.<br />טוב לעולם.</h2>
 </div>
 
-<div class="portal-box-contents">
+<div id="content">
 
 <p>Mozilla היא לא חברת תוכנה רגילה. אנחנו <a href="/<?=$lang?>/firefox/community/">קהילה</a> בינלאומית המוקדשת לבניית מוצרי תוכנה חופשית וטכנולוגיות שמשפרות את החוויה המקוונת לאנשים בכל מקום. אנחנו מתכנתים, אנשי שיווק, בודקים, ותומכים מכל מקום בעולם שעובדים כדי לוודא כי הרשת נשארת משאב ציבורי פתוח ומשותף. אנו מאמינים כי תקנים פתוחים מאפשרים ומעצימים בחירה וחדשנות ושכל אחד, בכל מקום, זכאי לחוויה המקוונת הבטוחה ביותר, המהירה ביותר והטובה מסוגה.</p>
 
-     <p><a href="/<?=$lang?>/products/">מוצרי התוכנה</a> וה<a
-     href="http://www.mozilla.org/projects/">טכנולוגיות</a> עטורי השבחים ומבוססי קוד־פתוח
+<p><a href="/<?=$lang?>/products/">מוצרי התוכנה</a> וה<a href="http://www.mozilla.org/projects/">טכנולוגיות</a> עטורי השבחים ומבוססי קוד־פתוח
      שלנו מוצעים חינם אין כסף לאנשים בכל מקום ביותר מ־40 שפות.</p>
 
-     <p>המטה של Mozilla ממוקם ב־<a
-     href="/<?=$lang?>/about/contact.html#hq">מאונטיין וויו, קליפורניה</a>
-     עם משרדים אזוריים ב<a
-     href="/<?=$lang?>/about/contact.html#japan">טוקיו</a> ו<a
-     href="/<?=$lang?>/about/contact.html#europe">פריס</a>.
+<p> Mozilla ממוקם ב־<a href="/<?=$lang?>/about/contact.html"> קליפורניה</a> עם משרדים אזוריים ב<a href="/<?=$lang?>/about/contact.html">אוקלנד</a>, <a href="/<?=$lang?>/about/contact.html">בייג'ינג</a>, <a href="/<?=$lang?>/about/contact.html">קופנהגן</a>, <a href="/<?=$lang?>/about/contact.html">פריס</a>, <a href="/<?=$lang?>/about/contact.html">טוקיו</a> ו<a href="/<?=$lang?>/about/contact.html">טורונטו</a>.</p>
 
-
-     <h3>Mozilla בישראל</h3>
-
+<h3>Mozilla בישראל</h3>
      <p>הקישורים הבאים מספקים מידע נוסף אודות Mozilla בישראל.</p>
-
      <ul>
      <li><a href="http://mozilla.org.il">מוזילה ישראל</a></li>
      <li><a href="http://mozilla.org.il/board">הפורומים של מוזילה ישראל</a></li>
      <li><a href="http://mozilla.org.il/news">חדשות מוזילה</a></li>
     </ul>
-
-</div> <!-- end .portal-box-contents  -->
-</div> <!-- end .portal-box-interior  -->
-</div> <!-- end .portal-box  -->
-
+</div>
 
 <?php
     @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
