@@ -5,7 +5,7 @@
     $body_class = 'products';
     
     $extra_headers = <<<EXTRA_HEADERS
-<link rel="stylesheet" type="text/css" href="/style/tignish/organic-page.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/organic-page.css" media="screen" />
 EXTRA_HEADERS;
 
     @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
@@ -34,7 +34,7 @@ EXTRA_HEADERS;
 	<p>אנו מתמרצים את המשימה שלנו לקידום הפתיחות, החדשנות וההזדמנויות ברשת ללא שיקולים עסקיים כגון רווחים או מחיר המניה שלנו (נחשו מה: אפילו אין לנו מניה).</p>
 	<p>ובדומה ל<a href="http://www.mozilla.org/foundation/">ארגון לטובת הכלל ללא מטרות רווח</a>, אנו מצהירים על ההצלחות שלנו במושגים של בניית קהילות והעשרת תנאי המחיה. אנו מאמינים בכוח ובפוטנציאל של הרשת ורוצים לראות אותה משגשגת עבור כל אחד, בכל מקום.</p>
 
-	<img src="/img/tignish/organic/organic-inline-02.png" alt="נערת Firefox" class="inline-02" />
+	<img src="<?=$config['static_prefix']?>/img/tignish/organic/organic-inline-02.png" alt="נערת Firefox" class="inline-02" />
 
 	<div id="organic-open-source">
 		<h3>מה זה קוד פתוח?</h3>
@@ -44,7 +44,7 @@ EXTRA_HEADERS;
 		<p>מה מוסר ההשכל של הסיפור? להיות פתוח גורם לדברים טובים לקרות. כל אחד יכול להציץ דרך התריסים שלנו... בעצם, אין לנו בכלל תריסים.</p>
 	</div>
 
-	<img src="/img/tignish/organic/organic-inline-01.png" alt="" />
+	<img src="<?=$config['static_prefix']?>/img/tignish/organic/organic-inline-01.png" alt="" />
 
 	<div id="organic-why-care">
 		<h3>למה זה צריך לעניין אתכם?</h3>

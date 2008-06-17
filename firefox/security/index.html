@@ -3,7 +3,7 @@
     $page_title = 'מוצרי Mozilla | אבטחה';
     $body_id    = 'security';
     $extra_headers = <<<EXTRA_HEADERS
-    <link rel="stylesheet" type="text/css" href="/style/tignish/security.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/security.css" media="screen" />
 EXTRA_HEADERS;
     @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 
@@ -35,7 +35,7 @@ EXTRA_HEADERS;
 	</div>
 
 	<div class="method-madness">
-		<img src="/img/tignish/security/key.png" alt="יש הגיון בשיגעון" width="150" height="151" />
+		<img src="<?=$config['static_prefix']?>/img/tignish/security/key.png" alt="יש הגיון בשיגעון" width="150" height="151" />
 		<h3>יש הגיון בשיגעון.</h3>
 		<p>אף אחד לא אוהב את האינטרנט יותר מאיתנו. אבל נוכלים, זבלנים ווירוסים קלי הדק הם איומים אמיתיים, לכן אתם צריכים להגן על עצמכם בזמן הגלישה ברשת.</p>
 	</div>
