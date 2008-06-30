@@ -3,6 +3,10 @@
     $page_title = 'Mozilla | ברוכים הבאים ל־Firefox';
     $body_id    = 'firstrun';
     $body_class = 'portal-page';
+    $extra_headers = <<<EXTRA_HEADERS
+        <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/dalvay/portal-page.css" media="screen" title="Dalvay"/>
+        <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/portal-page-transitional.css" media="screen" title="Dalvay"/>
+EXTRA_HEADERS;
     @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
