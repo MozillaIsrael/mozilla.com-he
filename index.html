@@ -1,0 +1,65 @@
+<?php
+    // translate the $page_title variable only
+    $page_title = 'Firefox web browser in Afrikaans | Faster, more secure and customizable';
+    $body_id    = 'landing-page';
+    $body_class = 'locale-af';
+    $extra_headers = <<<EXTRA_HEADERS
+    <meta name="description" content="Welcome to Firefox in Afrikaans! The Firefox Web Browser is the faster, more secure, and fully customizable way to surf the Internet." />
+    <link rel="stylesheet" type="text/css" href="/he/style/tignish/rtl.css" media="screen" />
+EXTRA_HEADERS;
+
+    @include_once "{$config['file_root']}/{$lang}/includes/header-landing-page-l10n.inc.php";
+
+?>
+
+</style>
+
+<div id="main-feature">
+    <div id="feature-contents">
+        <h2 id="firefox-headline">
+            Get Firefox 3 in Afrikaans
+        </h2>
+    <p id="firefox-intro">
+        Now available in Afrikaans, Firefox 3 is faster, safer and smarter than ever before. With more than 15,000 improvements, Firefox speaks your language.
+    </p>
+    </div>
+
+
+<script type="text/javascript" src="/js/download.js"></script>
+<?php
+    // php call to display the download box, do not translate variables
+    echo $firefoxDetails->getDownloadBlockForLocale($lang,  array('ancillary_links' => false, 'download_product' => 'Free Download') );
+?>
+
+</div>
+<div id="main-content">
+    <div id="learn_more" class="sub-feature">
+        <h3>Need Help?</h3>
+        <p>
+        Our Support page has plenty of answers, plus a live chat feature to guide you through any tricky spot. <a href="http://support.mozilla.com/af/kb/">Visit Support</a>
+        </p>
+    </div>
+
+    <div id="questions" class="sub-feature">
+        <h3>More Information</h3>
+        <p>
+        Check out your community-powered local Afrikaans Web site for more details about Firefox. <a href="">Visit your community site</a>
+        </p>
+    </div>
+    <div id="questions" class="sub-feature">
+        <h3>Other Languages</h3>
+        <p>
+        If this isn't the language you're looking for, try our full list of localized browsers. <a href="http://www.mozilla.com/af/firefox/all.html">View Languages</a>
+        </p>
+    </div>
+
+
+    <p class="thunderbird">
+    Enjoy safe, fast and easy email, Mozilla-style with our Thunderbird email client. <a href="/af/thunderbird/">Learn More</a>
+    </p>
+</div>
+
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>
