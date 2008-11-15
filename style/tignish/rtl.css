@@ -11,12 +11,16 @@ html {
   width: 500px;
 }
 
+#main-feature p {
+  margin: 0;
+}
+
 #doc { 
   text-align: right;
 }
 #main-content .sub-feature p a {
 /*  background-position: right;*/
-  background: transparent url(/he/img/tignish/firstrun/link-arrow-rtl.png) no-repeat scroll left center;
+  background: transparent url(/he/img/tignish/firstrun/link-arrow-rtl.png) no-repeat scroll right center;
   padding-right: 12px;
   padding-left: 0;
 }
