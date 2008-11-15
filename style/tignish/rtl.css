@@ -1,0 +1,28 @@
+html { 
+  direction: rtl;
+}
+
+#header {
+  direction: ltr;
+}
+
+#main-feature {
+  float: left;
+  width: 500px;
+}
+
+#doc { 
+  text-align: right;
+}
+#main-content .sub-feature p a {
+/*  background-position: right;*/
+  background: transparent url(/he/img/tignish/firstrun/link-arrow-rtl.png) no-repeat scroll left center;
+  padding-right: 12px;
+  padding-left: 0;
+}
+
+#landing-page p.thunderbird {
+  background-position: right;
+  padding-right: 80px;
+  padding-left: 0;
+}
