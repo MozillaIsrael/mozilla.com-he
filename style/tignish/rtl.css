@@ -1,4 +1,4 @@
-html { 
+html {
   direction: rtl;
 }
 
@@ -15,7 +15,7 @@ html {
   margin: 0;
 }
 
-#doc { 
+#doc {
   text-align: right;
 }
 #main-content .sub-feature p a {
@@ -28,4 +28,10 @@ html {
   background-position: right;
   padding-right: 80px;
   padding-left: 0;
+}
+
+/* workaround IE6 display bugs */
+#main-content {
+  clear:left;
+  width:100%;
 }
