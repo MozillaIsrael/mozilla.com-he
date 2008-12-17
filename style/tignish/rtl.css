@@ -28,6 +28,7 @@ html {
   background-position: right;
   padding-right: 80px;
   padding-left: 0;
+  float:left;
 }
 
 /* workaround IE6 display bugs */
