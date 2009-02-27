@@ -1,0 +1,53 @@
+<?php
+    // The $body_* variables are for compatibility with pre-existing css
+    $page_title = 'Firefox עודכן';
+    $body_id    = 'whatsnew';
+    $body_class = 'portal-page';
+
+    $extra_headers = <<<EXTRA_HEADERS
+    <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/whatsnew-page.css" media="screen" />
+
+EXTRA_HEADERS;
+    $extra_feature = <<<EXTRA_FEATURE
+<div id="tab-close"><p>לחץ על כפתור הסגירה בלשונית זו כדי לעבור לדף הבית שלך</p></div>
+EXTRA_FEATURE;
+
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+?>
+
+<div id="main-feature">
+	<h2 id="main-feature-title">עודכנת לגירסה האחרונה של Firefox.</h2>
+	<p id="main-feature-contents">תודה על זמנך! עדכון זה יגרום לך להיות בטוח יותר ברשת.</p>
+	<script type="text/javascript">// <![CDATA[
+	//localization note: message 1 will display the version number at the end of the string, hence the trailing space
+	//ex: You’re now running Firefox 3.1
+
+	var userversion = '<?=LATEST_FIREFOX_VERSION?>';
+	var message1 = 'אתה מריץ כעת Firefox ';
+	var message2 = 'מסיבות אבטחה, אנו ממליצים שתוריד את <a href="/<?=$lang?>/firefox/">הגירסה האחרונה</a>.';
+
+	whatsNewMessage();
+	// ]]></script>
+</div>
+
+<div id="main-content">
+	<div class="sub-feature" id="security">
+		<h3>Firefox: הדרך הבטוחה ביותר לגלישה ברשת</h3>
+		<p>קהילה של אלפי מומחים עובדת בכל יום כדי לסייע לנו לזהות ולהדוף את האיומים האחרונים לבטחון המקוון שלך. לשמור עליך בטוח זה בעדיפות העליונה שלנו. <a href="/<?=$lang?>/firefox/security/" class="blocklevel">למד עוד על תהליכי האבטחה שלנו</a></p>
+	</div>
+	<div class="sub-feature" id="central">
+		<h3>עשה יותר עם Firefox</h3>
+		<p>כנס לדף ההתחלה שלנו כדי לראות כיצד אתה יכול להוציא את המירב מה־Firefox שלך. <a href="/<?=$lang?>/firefox/central/" class="blocklevel">עשה יותר עם Firefox</a></p>
+	</div>
+
+	<p class="changelog">מה חדש בעדכון זה?  <a href="../releasenotes/">צפה בהערות השחרור</a>.</p>
+</div>
+
+
+<?php
+    $extra_footers = <<<EXTRA_FOOTERS
+    <script type="text/javascript" src="/js/whats-new-page.js"></script>
+EXTRA_FOOTERS;
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>
+
