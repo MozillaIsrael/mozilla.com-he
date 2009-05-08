@@ -1,13 +1,12 @@
 <?php
-    // translate the $page_title variable only, and make sure $body_class reflects your locale code.
-    $page_title = 'דפדפן Firefox בעברית ‎| מהיר יותר, בטוח יותר, וניתן להתאמה אישית ';
-    $body_id    = 'landing-page';
-    $body_class = 'locale-he';
+    // translate $page_title and $meta_description
+    $page_title       = " ‎| מהיר יותר, בטוח יותר, וניתן להתאמה אישית ";
+    $meta_description = "ברוכים הבאים ל־Firefox בעברית! דפדפן Firefox הוא דפדפן מהיר יותר, בטוח יותר, והוא הדרך הטובה יותר לגלישה ברשת.";
     $extra_headers = <<<EXTRA_HEADERS
-    <meta name="description" content="ברוכים הבאים ל־Firefox בעברית! דפדפן Firefox הוא דפדפן מהיר יותר, בטוח יותר, והוא הדרך הטובה יותר לגלישה ברשת." />
-    <link rel="stylesheet" type="text/css" href="/he/style/tignish/rtl.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/ar/style/tignish/rtl.css" media="screen"/>
 EXTRA_HEADERS;
 
+    @include_once "{$config['file_root']}/includes/customize-landing-page-l10n.inc.php";
     @include_once "{$config['file_root']}/{$lang}/includes/header-landing-page-l10n.inc.php";
 
 ?>
@@ -25,18 +24,14 @@ EXTRA_HEADERS;
     </div>
 
 
-<script type="text/javascript" src="/js/download.js"></script>
-<?php
-    // php call to display the download box, do not translate variables
-    echo $firefoxDetails->getDownloadBlockForLocale($lang,  array('ancillary_links' => false, 'download_product' => 'Free Download') );
-?>
+<?=$downloadbox?>
 
 </div>
 <div id="main-content">
     <div id="learn_more" class="sub-feature">
         <h3>צריך עזרה?</h3>
         <p>
-דף התמיכה שלנו כולל שפע תשובות, וגם תכונת צ'אט שתאפשר לנו להדריך אותך בשלבים המתקדמים. 
+דף התמיכה שלנו כולל שפע תשובות, וגם תכונת צ'אט שתאפשר לנו להדריך אותך בשלבים המתקדמים.
 <a href="http://support.mozilla.com/he/kb/">היכנס לאתר התמיכה</a>
         </p>
     </div>
@@ -44,21 +39,21 @@ EXTRA_HEADERS;
     <div id="questions" class="sub-feature">
         <h3>מידע נוסף</h3>
         <p>
-מוזילה ישראל הוא האתר הקהילתי של פיירפוקס לדוברי עברית. 
+מוזילה ישראל הוא האתר הקהילתי של פיירפוקס לדוברי עברית.
 <a href="http://mozilla.org.il">היכנס לאתר הקהילה בישראל</a>
         </p>
     </div>
     <div id="community" class="sub-feature">
         <h3>גם בשפות אחרות</h3>
         <p>
-במידה ותעדיף את Firefox בשפה אחרת, היכנס לרשימת השפות המלאה של הדפדפן. 
+במידה ותעדיף את Firefox בשפה אחרת, היכנס לרשימת השפות המלאה של הדפדפן.
 <a href="http://www.mozilla.com/he/firefox/all.html">הצג שפות</a>
         </p>
     </div>
 
 
     <p class="thunderbird">
-Thunderbird 
+Thunderbird
 היא תוכנת דואר אלקטרוני מהירה ובטוחה יותר, המבוססת על אותה הטכנולוגיה של Firefox.
 <a href="/he/thunderbird/">מידע נוסף</a>
     </p>
