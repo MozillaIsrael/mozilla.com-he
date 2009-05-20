@@ -1,14 +1,8 @@
 <?php
-    // The $body_* variables are for compatibility with pre-existing css
+    // strings to translate
     $page_title = 'Firefox עודכן';
-    $body_id    = 'whatsnew';
-    $body_class = 'portal-page';
 
-    $extra_headers = <<<EXTRA_HEADERS
-    <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/whatsnew-page.css" media="screen" />
-
-EXTRA_HEADERS;
-
+    @include_once "{$config['file_root']}/includes/headers/3.0/whatsnew.inc.php";
     @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
@@ -36,9 +30,16 @@ EXTRA_HEADERS;
                 <h3>עשה יותר עם Firefox</h3>
                 <p>כנס לדף ההתחלה שלנו כדי לראות כיצד אתה יכול להוציא את המירב מה־Firefox שלך. <a href="/<?=$lang?>/firefox/central/" class="blocklevel">עשה יותר עם Firefox</a></p>
         </div>
-        <p class="changelog">מה חדש בעדכון זה?  <a href="../releasenotes/">צפה בהערות השחרור</a>.</p>
-</div>
 
+<?php echo insertQuarterlySurvey($lang); ?>
+
+        <p class="changelog">מה חדש בעדכון זה?  <a href="../releasenotes/">צפה בהערות השחרור</a>.</p>
+
+
+<?php echo insertQuarterlySurvey($lang); ?>
+
+
+</div>
 
 <?php
     $extra_footers = <<<EXTRA_FOOTERS
