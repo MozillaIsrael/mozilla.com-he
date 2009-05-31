@@ -1,0 +1,136 @@
+<?php
+
+    // L10n: Page title to translate
+    $page_title         = "Firefox המהיר ביותר";
+
+    // Video controls strings to translate
+    $download_ogg       = "הורדה בפורמט וידאו פתוח (Ogg Theora)";
+    $download_mp4       = "הורדה בפורמט MPEG-4";
+    $check_back         = "Check back soon to see the next video.";
+
+
+    @include_once "{$config['file_root']}/includes/headers/firefox/fastest.inc.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+?>
+
+
+
+<div id="main-feature">
+
+    <h2>
+    הראה לנו את ה<em>מהירות</em> שלך
+    </h2>
+
+    <p>עזור לנו לספר לעולם ש-Firefox 3.5 הוא ה־Firefox המהיר ביותר מאז ומתמיד. התחל בשליחה אליו של וידאו עם היכולות המהירות ביותר שלך.</p>
+
+</div>
+
+
+<div id="main-content">
+
+    <div id="howto" class="expander expander-first expander-odd expander-default-open">
+      <h3 class="expander-header">
+      כיצד לעשות ולהעלות את הוידאו שלך
+      </h3>
+
+      <div class="expander-content">
+        <p>קל מאד להשתתף ב-Fastest Firefox. בחר את הכשרון שלך (סריגה, הקפצת המבורגרים, ציחצוח שיניים, כל דבר!) ועשה וידאו שלך עושה זאת-<strong>מהר!</strong> עקוב אחר הצעדים הבאים והעלה את הוידאו שלך לפני <?=$launch_date;?>.</p>
+        <ol>
+            <li>הכן וידאו באורך של 30 שניות (וידאו בייתי יהיה מעולה) שמציג את כשרון המהירות שלך.</li>
+            <li>לחץ על הכפתור למטה כדי להעלות את הוידאו שלך.</li>
+            <li>אנחנו נכין וידאו שיכלול כמה שיותר סרטונים שיועלו לתוך וידאו קהילתי אחד, אז בדוק לאחר ההשקה של Firefox 3.5 אם הצלחת לעשות זאת ולהיכנס לוידאו!</li>
+        </ol>
+
+        <a id="upload-button" href="http://fastestfirefox.mozilla.com/"><span>העלה את הוידאו שלך</span></a>
+
+      </div>
+    </div>
+    <div class="expander-footer"></div>
+
+    <div id="videos">
+        <div class="video" id="french">
+            <p><a id="video-french" href="#" class="thumbnail"><img src="/img/tignish/firefox/fastest/preview-clapper.jpg" alt="Video preview" /><span>
+
+            צפה בוידאו של קנט פרנץ', מוחא הכפיים המהיר בעולם
+            
+            </span></a></p>
+
+            <p class="secondary">
+            מוחא הכפיים המהיר בעולם, קנט "טוסט" פרנץ' מריע ל־Firefox בתור מחזיק השיא. קנט משלב את הסגנון האישי שלו עם זריזות ומוחא כפיים במהירות של 12 מחיאות בשנייה. הוא מתכנן לשבור את השיא שלו עצמו בקרוב.
+            </p>
+
+            <p class="secondary"><a href="http://www.fastestclapper.com/" class="external">עוד על קנט</a></p>
+
+            <?=$video_player1;?>
+        </div>
+
+
+<?php if($nb_video>1): ?>
+
+        <div class="video" id="purugganan">
+            <p><a id="video-purugganan" href="#" class="thumbnail"><img src="/img/tignish/firefox/fastest/preview-cupstacker.jpg" alt="Video preview" /><span>
+
+            Watch Steven Purugganan's video as the world's Fastest Sport Stacker
+            צפה בוידאו של סטיבן פורוגינן, ?????????? המהיר בעולם 
+
+            </span></a></p>
+
+            <p class="secondary">
+            מחזיק שיא העולם, סטיבן פורוגינן אוהב את Firefox מספיק כדי לעשות 
+            Fellow Guinness World Record Holder, Steven Purugganan loves Firefox enough to do some fast cup stacking, just for us. As part of the World Sport Stacking Association, Steven is only 11 years old, but his fast hands put a pile of cups in their place in only 5.93 seconds.
+            </p>
+
+            <p class="secondary"><a href="http://worldsportstackingassociation.org/" class="external">Learn more about Sport Stacking.</a></p>
+
+            <?=$video_player2;?>
+        </div>
+
+<?php else: echo $coming_soon_video1; endif; ?>
+
+<?php if($nb_video>2): ?>
+
+        <div class="video video-last" id="taylor">
+            <p><a id="video-taylor" href="#" class="thumbnail"><img src="/img/tignish/firefox/fastest/preview-banjo.jpg" alt="Video preview" /><span>
+
+            Watch Todd Taylor's video as the world's Fastest Banjo Player
+            צפה בוידאו של טוד טיילור, שחקן ??Bonjo?? המהיר בעולם
+
+            </span></a></p>
+            <p class="secondary">
+            טוד טיילור שמח לשחק מהר בשביל Firefox, וק
+            Banjoman Todd Taylor is happy to play fast for Firefox, and to call himself a fellow Guinness World Record Holder. Todd has played bluegrass, country, pop and rock &amp; roll. He continues to record and play in movies, TV and more.
+            </p>
+
+            <p class="secondary"><a href="http://www.toddtaylorbanjoman.com/" class="external">Learn more about Todd.</a></p>
+
+            <?=$video_player3;?>
+        </div>
+
+<?php else: echo $coming_soon_video2; endif; ?>
+
+    </div>
+</div><!-- end #content div -->
+
+
+
+<div id="sidebar">
+
+    <div id="speed-promo">
+
+        <h4>עד כמה מהיר?</h4>
+        <p>Firefox 3.5 מהיר <strong>פי שתיים</strong> מגירסה 3.0, ועשר פעמים מהירה יותר מגירסה 2.0. <sup class="footnote">*</sup></p>
+        <a href="/<?=$lang?>/firefox/<?=$fx_prerelease_file?>">הורד גירסה טרום שחרור של Firefox 3.5</a>
+
+    </div>
+
+    <p class="small-print"><sup class="footnote">*</sup> מתבסס על תוצאות מבחן ביצועים SunSpider לבדיקת ביצועים של JavaScript על מכונת Windows XP.</p>
+
+</div>
+
+
+
+
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>
