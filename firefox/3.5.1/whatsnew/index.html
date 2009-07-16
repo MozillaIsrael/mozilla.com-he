@@ -1,0 +1,118 @@
+<?php
+
+// L10n: Page title to be translated below
+$page_title = "Firefox Updated";
+
+
+@include_once "{$config['file_root']}/includes/headers/3.5/whatsnew.inc.php";
+@include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+$_version       = getVersionBySelf();
+$_valid_version = isValidVersionByReleaseNotes($_version, $config['file_root'], $lang);
+
+// check if there is a version
+if ($_version !== null && $_valid_version) {
+    // check if we're running the latest version
+    if (strcmp($_version, LATEST_FIREFOX_VERSION) == 0) {
+
+
+
+// L10n: Translate the following HTML chunks, don't forget the alt="Welcome to Firefox 3" attribute for the image, this is
+// useful for blind people to know what the image is about.
+// On this page, we look at the Firefox version the user is using and we display a message adapted to this version.
+?>
+
+
+    <div id="main-feature" class="latest-version">
+
+
+    <h2>
+    <span>ברוכים הבאים ל־</span>
+    <img src="/<?=$lang?>/img/tignish/whatsnew/welcome-3-5.png" alt="ברוכים הבאים ל־Firefox 3.5" id="main-title" />
+    </h2>
+<p>תודה שהתקנת את הגירסה המהירה, הבטוחה והחכמה ביותר של Firefox עד כה.
+    גלישה מהנה!</p>
+        <p class="more-details"><a href="../releasenotes/">לפרטים נוספים, קרא את הערות השחרור</a></p>
+
+
+    </div>
+
+
+
+<?php } else { ?>
+
+
+
+    <div id="main-feature" class="old-version">
+
+
+        <h2 id="main-feature-title">אתה מריץ כעת Firefox גרסה <?=$_version?></h2>
+        <p id="main-feature-contents">מסיבות אבטחה, אנו ממליצים שתוריד את <a href="/<?=$lang?>/firefox/">הגרסה האחרונה ששוחררה</a>.</p>
+
+
+    </div>
+
+
+
+<?php } } else { ?>
+
+
+
+    <div id="main-feature" class="unknown-version">
+
+
+        <h2 id="main-feature-title">אתה מריץ גירסה לא ידועה של Firefox.</h2>
+        <p id="main-feature-contents">מסיבות אבטחה, אנו ממליצים שתוריד את <a href="/<?=$lang?>/firefox/">הגרסה האחרונה ששוחררה</a>.</p>
+
+
+    </div>
+
+
+
+<?php } ?>
+
+
+
+<div id="main-content">
+<div id="sub-features">
+    <div class="sub-feature" id="open-video">
+<?=$video;?>
+
+
+        <h3>צפה בזה!</h3>
+        <p>Firefox 3.5 הוא הדפדפן הראשון שתומך בפורמטים פתוחים לוידאו, המאפשרים לסרטים להיות חלק מדפים ברשת הדינמית של היום ללא צורך בתוסף. קדימה - נסה זאת.</p>
+
+
+
+
+<?=$dailymotion;?>
+
+    </div>
+
+    <div class="sub-feature" id="sumo">
+
+
+        <h3>צריך עזרה?</h3>
+        <p class="first">באתר התמיכה של קהילת מוזילה ישראל ישנן תשובות רבות, וגם צ'אט חי כדי לעזור לך בנקודות המסובכות.
+</p>
+        <p><a href="http://mozilla.org.il/support/" class="blocklevel">בקר באתר התמיכה של קהילת מוזילה ישראל</a></p>
+
+
+    </div>
+    <div class="sub-feature" id="addons">
+
+
+        <h3>הגיע זמן להיות אישיים</h3>
+        <p class="first">ישנן אלפי דרכים חינמיות לחלוטין לביצוע התאמה אישית כך ש־Firefox שלך יתאים במדוייק למה שברצונך לעשות ברשת.</p>
+        <p><a href="https://addons.mozilla.org" class="blocklevel">גלה תוספות</a></p>
+
+
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+
+<?php
+
+@include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+
+?>
