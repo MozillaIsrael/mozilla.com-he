@@ -109,15 +109,11 @@
 
 <div id="sidebar">
 
-    <div id="speed-promo">
-
-        <h4>עד כמה מהיר?</h4>
-        <p>Firefox 3.5 מהיר <strong>פי שתיים</strong> מגרסה 3.0, ופי עשר מהירה יותר מגרסה 2.0. <sup class="footnote">*</sup></p>
-        <a href="/<?=$lang?>/firefox/<?=$fx_prerelease_file?>">הורד גרסת טרום שחרור של Firefox 3.5</a>
-
-    </div>
-
-    <p class="small-print"><sup class="footnote">*</sup> מתבסס על תוצאות מבחן ביצועים SunSpider לבדיקת ביצועים של JavaScript על מכונת Windows XP.</p>
+  <script type="text/javascript" src="/js/download.js"></script>
+    <?php
+        $_options = array('ancillary_links' => true, 'layout' => 'sidebar', 'download_parent_override' => 'sidebar');
+        echo $firefoxDetails->getDownloadBlockForLocale($lang, $_options);
+    ?>
 
 </div>
 
