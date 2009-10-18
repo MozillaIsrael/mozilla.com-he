@@ -1,0 +1,102 @@
+<?php
+    // please translate the 3 variables below
+    $page_title         = "Firefox Mobile";
+    $form_field         = "Enter your mobile number";
+    $chooseYourCountry  = "Choose your country";
+
+    @include_once "{$config['file_root']}/includes/headers/mobile/home.php";
+    @include_once "{$config['file_root']}/{$lang}/includes/header-mobile-l10n.inc.php";
+
+?>
+
+
+<div id="main-feature">
+    <h2>You took back the Web. Now take it with you.</h2>
+    <p>Firefox is going mobile.</p>
+</div>
+
+<div><?=buildMobileSubPageMenu($lang, 'mobile');?></div>
+
+<div id="main-content">
+
+    <div id="mobile-feature">
+
+        <div id="mobile-feature-intro">
+            <h3>Send the download link to your phone</h3>
+
+            <?php if (isset($_GET['status']) && $_GET['status'] == 'fail'): ?>
+                <p class="error">
+                    We could not send a text message to you.
+                    Please make sure your number includes a country code (e.g. +1 555-123-4567).
+                </p>
+            <?php else: ?>
+                <p>Enter your mobile number and get a text containing a link to download Firefox to your phone.</p>
+            <?php endif ?>
+        </div>
+
+        <form action="<?=$formurl?>" method="post" accept-charset="utf-8" id="mobile-feature-form">
+
+
+            <?php if ($platform == 'winmo') { ?>
+            <h4>Get it now for Windows Mobile (beta)</h4>
+            <h5>Available for Windows Mobile 6.0 and above phones: AT&amp;T Tilt, HTC Touch Diamond Pro, Palm Treo and Samsung Omnia.</h5>
+            <?php } else { ?>
+            <h4>Get it now on the Nokia N900</h4>
+            <?php } ?>
+
+            <?php buildCountryForm($countryTelCodes, $countries, $chooseYourCountry, $lang); ?>
+
+            <p class="button-field">
+                <button class="sms-button green-button"><span class="outer">
+                  <span>
+                  Send Text
+                  </span>
+                </span></button>
+                <span class="info rates">Standard text rates apply</span>
+            </p>
+
+        </form>
+
+        <div id="other-download-options">
+        <?php if ($platform == 'winmo') { ?>
+
+            <h3>Other download options</h3>
+            <h4>Download Firefox directly from your phone</h4>
+            <p>Use your current mobile browser to download Firefox at <a href="http://mozilla.com/m">Mozilla.com/m</a></p>
+            <h4>Download Firefox to your desktop and sync to your mobile</h4>
+            <p>Download to your Desktop and sync with ActiveSync.</p>
+
+        <?php } else { ?>
+
+            <h4>Don’t receive SMS texts? Download Firefox on your mobile</h4>
+            <p>Use your current mobile browser to download Firefox at <a href="http://mozilla.com/m">Mozilla.com/m</a></p>
+
+        <?php } ?>
+        </div>
+
+    <div id="mobile-feature-footer"></div>
+    </div>
+</div>
+
+<div id="mobile-footer" class="sub-features">
+    <div class="sub-feature" id="video-tour">
+        <h4>Take the Video Tour</h4>
+        <p>Learn how Firefox puts the whole Web on your mobile device.</p>
+        <p class="link"><a href="/<?=$lang?>/firefox/video/?video=about-mobile">Launch the Video</a></p>
+    </div>
+    <div class="sub-feature" id="developers-wanted">
+        <h4>Get Involved</h4>
+        <p>We rely on a global community of people like you to help  build, test and spread Firefox.</p>
+        <p class="link"><a href="/<?=$lang?>/about/get-involved.html">Find Out What You Can Do</a></p>
+    </div>
+
+    <div class="sub-feature" id="questions-comments">
+        <h4>Questions? Comments?</h4>
+        <p>Let us answer your questions, or tell us what you think about Firefox.</p>
+        <p class="link"><a href="http://mobile.support.mozilla.com/">Get Help</a></p>
+    </div>
+</div>
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+?>
