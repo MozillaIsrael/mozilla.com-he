@@ -106,19 +106,6 @@
 ;MB
  מ״ב
 
-;Linux
-Linux‏
-
-;Windows
-Windows‏
-
-;Mac OS X
-Mac OS X‏
-
-;(in English)
-(באנגלית)
-
-
 ;Help us make Firefox even better!
 עזור לנו לעשות את Firefox טוב יותר!
 
@@ -131,6 +118,14 @@ Mac OS X‏
 ;Close
 סגירה
 
+;(in English)
+(באנגלית)
+
+;Download Now - Free
+הורד עכשיו - חינם
+
+;Return to top
+חזור למעלה
 
 ;You should <a href="http://get.adobe.com/flashplayer/">update Adobe Flash Player</a> right now.
 כדאי <a href="http://get.adobe.com/flashplayer/">לעדכן את Adobe Flash Player</a> כעת.
@@ -138,3 +133,23 @@ Mac OS X‏
 ;Firefox is up to date, but your current version of Flash Player can cause security and stability issues.  Please <a href="http://get.adobe.com/flashplayer/">install the free update</a> as soon as possible.
 Firefox עדכני, אבל הגירסה של Flash Player שמותקנת יכולה לגרום לבעיות אבטחה ויציבות. בבקשה <a href="http://get.adobe.com/flashplayer/">להתקין את העדכון</a> בהקדם האפשרי.
 
+;Features
+תכונות
+
+;Customize
+התאמה אישית
+
+;Synchronize
+סינכרון
+
+;Develop for Mobile
+פיתוח לנייד
+
+;Other Supported Platforms
+פלטפורמות נתמכות אחרות
+
+;Other Platforms &amp; Languages
+שפות ופלטפורמות אחרות
+
+;Firefox is turning 5! <a href="%s">Join the celebration</a>.
+Firefox כבר בן 5! <a href="%s">הצטרף לחגיגה</a>.
