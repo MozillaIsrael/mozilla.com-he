@@ -1,0 +1,48 @@
+<?php
+    // The $body_* variables are for compatibility with pre-existing css
+    $page_title = 'Mozilla | ברוכים הבאים ל־Firefox';
+    $body_id    = 'firstrun';
+    $body_class = 'portal-page';
+    $extra_headers = <<<EXTRA_HEADERS
+        <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/dalvay/portal-page.css" media="screen" title="Dalvay"/>
+        <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/portal-page-transitional.css" media="screen" title="Dalvay"/>
+EXTRA_HEADERS;
+    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+?>
+
+<div id="tab-close">
+לחץ על כפתור הסגירה בלשונית זו כדי לעבור לדף הבית שלך
+</div>
+
+<script type="text/javascript"> loadFirstRunInstallImage(); </script>
+
+<div class="portal-box">
+<div class="portal-box-interior">
+
+<div class="portal-box-header">
+    <h1>ברוכים הבאים ל־Firefox!</h1>
+    <p>אתה עומד לגלות למה מליוני אנשים ברחבי העולם עברו ל־Firefox כדי לקבל חוויה מקוונת טובה יותר.</p>
+</div>
+
+<div class="portal-box-contents">
+
+    <p>חווה את ההבדל. Firefox מפותח ונתמך על־ידי <a href="/<?=$lang ?>/firefox/about/">Mozilla</a>, קהילה גלובלית
+    העובדת יחדיו כדי לעשות את הרשת למקום טוב יותר לכולם.</p>
+
+    <p><a href="/<?=$lang ?>/firefox/central/">למד עוד אודות התכונות של
+    Firefox</a>, או עקוב אחר ההוראות בראש עמוד זה כדי לסגור את הלשונית הזו ולעבור ישירות
+    לדף הבית שלך.</p>
+
+    <!--Note: below is only for locales that *DO NOT* ship with a dictionary  --> 
+    <h3>הוסף מילון עברי לבודק האיות</h3> 
+    <p><a href="https://addons.mozilla.org/he/firefox/2.0.0.1/dictionaries/">התקן מילון כעת</a></p>
+
+
+
+</div> <!-- end .portal-box-contents  -->
+</div> <!-- end .portal-box-interior  -->
+</div> <!-- end .portal-box  -->
+
+<?php
+    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+?>
