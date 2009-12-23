@@ -1,4 +1,5 @@
 <?php
+
     // please translate the 3 variables below
     $page_title         = "Firefox Mobile";
     $form_field         = "Enter your mobile number";
@@ -20,61 +21,15 @@
 <div id="main-content">
 
     <div id="mobile-feature">
-
-        <div id="mobile-feature-intro">
-            <h3>Send the download link to your phone</h3>
-
-            <?php if (isset($_GET['status']) && $_GET['status'] == 'fail'): ?>
-                <p class="error">
-                    We could not send a text message to you.
-                    Please make sure your number includes a country code (e.g. +1 555-123-4567).
-                </p>
-            <?php else: ?>
-                <p>Enter your mobile number and get a text containing a link to download Firefox to your phone.</p>
-            <?php endif ?>
-        </div>
-
-        <form action="<?=$formurl?>" method="post" accept-charset="utf-8" id="mobile-feature-form">
-
-
-            <?php if ($platform == 'winmo') { ?>
-            <h4>Get it now for Windows Mobile (beta)</h4>
-            <h5>Available for Windows Mobile 6.0 and above phones: AT&amp;T Tilt, HTC Touch Diamond Pro, Palm Treo and Samsung Omnia.</h5>
-            <?php } else { ?>
-            <h4>Get it now on the Nokia N900</h4>
-            <p class="other"><a href="platforms/"><?php echo ___('Other Platforms &amp; Languages');?></a></p>
-            <?php } ?>
-
-            <?php buildCountryForm($countryTelCodes, $countries, $chooseYourCountry, $lang); ?>
-
-            <p class="button-field">
-                <button class="sms-button green-button"><span class="outer">
-                  <span>
-                  Send Text
-                  </span>
-                </span></button>
-                <span class="info rates">Standard text rates apply</span>
-            </p>
-
-        </form>
-
-        <div id="other-download-options">
-        <?php if ($platform == 'winmo') { ?>
-
-            <h3>Other download options</h3>
-            <h4>Download Firefox directly from your phone</h4>
-            <p>Use your current mobile browser to download Firefox at <a href="http://mozilla.com/m">Mozilla.com/m</a></p>
-            <h4>Download Firefox to your desktop and sync to your mobile</h4>
-            <p>Download to your Desktop and sync with ActiveSync.</p>
-
-        <?php } else { ?>
-
-            <h4>Don’t receive SMS texts? Download Firefox on your mobile</h4>
-            <p>Use your current mobile browser to download Firefox at <a href="http://mozilla.com/m">Mozilla.com/m</a></p>
-
-        <?php } ?>
-        </div>
-
+     <div id="download-options">
+       <div id="download-primary">
+         <h4><?= ___('Download Firefox directly from your phone') ?></h4>
+         <p id="download-instructions"><a href="http://Firefox.com/m"><?= ___('Get it now on the Nokia N900') ?></a></p>
+       </div>
+       <div id="download-other">
+         <?= sms::form() ?>
+       </div>
+     </div>
     <div id="mobile-feature-footer"></div>
     </div>
 </div>

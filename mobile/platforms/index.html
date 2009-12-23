@@ -24,13 +24,13 @@
 
     <div id="list_maemo">
         <h4>Maemo</h4>
-        <p><a href="../" class="download">Download Firefox for Maemo</a></p>
         <ul>
             <li>Nokia N900</li>
             <li>Nokia N810</li>
         </ul>
     </div>
 
+ <?php /* hide winmo
     <div id="list_winmo">
         <h4>Windows Mobile</h4>
         <p><a href="../?platform=winmo" class="download">Download Firefox for Windows Mobile</a></p>
@@ -41,14 +41,15 @@
             <li>Samsung Omnia</li>
         </ul>
     </div>
+ end hide */ ?>
 
     <h4 id="list_other">Don’t see your phone here?</h4>
     <p>If your phone does not appear on this list, you can still download and use Firefox on your mobile device. Your mobile device must have sufficient RAM (128 MB or more) to run Firefox. That said, we encourage you to download Firefox on a tested device in order to experience full functionality.</p>
     <p>You can also experiment with Firefox, provide feedback, write add-ons, and get involved by installing a version of Firefox for your desktop PC:</p>
     <ul>
-        <li><a href="http://ftp.mozilla.org/pub/mozilla.org/mobile/1.0b4/fennec-1.0b4.<?=$lang?>.win32.zip" target="_blank">Windows</a></li>
-        <li><a href="http://ftp.mozilla.org/pub/mozilla.org/mobile/1.0b4/fennec-1.0b4.<?=$lang?>.mac.dmg" target="_blank">Mac OS X</a></li>
-        <li><a href="http://ftp.mozilla.org/pub/mozilla.org/mobile/1.0b4/fennec-1.0b4.<?=$lang?>.linux-i686.tar.bz2" target="_blank">Linux</a></li>
+        <li><a href="<?= mobileDetails::download_url($lang, mobileDetails::windows) ?>" target="_blank">Windows</a></li>
+        <li><a href="<?= mobileDetails::download_url($lang, mobileDetails::mac) ?>" target="_blank">Mac OS X</a></li>
+        <li><a href="<?= mobileDetails::download_url($lang, mobileDetails::linux) ?>" target="_blank">Linux</a></li>
     </ul>
 
     </div>
