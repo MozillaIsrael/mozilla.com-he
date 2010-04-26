@@ -4,7 +4,7 @@
 
 
     $body_id = 'home';
-    @include_once "{$config['file_root']}/{$lang}/includes/mobile-header.inc.php";
+    include_once "{$config['file_root']}/{$lang}/includes/mobile-header.inc.php";
 ?>
 
 <div id="head">
@@ -27,5 +27,7 @@
 <p id="features"><a href="/<?= $lang ?>/m/features.html">See More Features</a></p>
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/mobile-footer.inc.php";
+    include_once "{$config['file_root']}/{$lang}/includes/mobile-footer.inc.php";
+    // Source en-GB reference file at rev 66239:
+    // http://viewvc.svn.mozilla.org/vc/projects/mozilla.com/trunk/en-GB/m/index.html?revision=66239&content-type=text%2Fplain&view=co
 ?>
