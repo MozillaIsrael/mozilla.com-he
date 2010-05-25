@@ -29,7 +29,7 @@
     </ul>
   </div>
 
-  <div class="sub-feature" id="personalize"><div>
+  <div class="sub-feature<?=$oop_class;?>" id="personalize"><div>
     <h3>דרכים נוספות להתאמה אישית</h3>
     <p>התאם את Firefox לצורה בה תרצה לגלוש ברשת עם אלפי תוספות חופשיות.</p>
     <ul class="link">
@@ -38,6 +38,8 @@
       </li>
     </ul>
   </div></div>
+
+<?=$oop;?>
 
   <p id="sub-links">
       <a href="/<?=$lang?>/firefox/features/" id="features-link">תכונות נוספות של Firefox 3.6</a>
