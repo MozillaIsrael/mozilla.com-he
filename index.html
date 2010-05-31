@@ -6,8 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/ar/style/tignish/rtl.css" media="screen"/>
 EXTRA_HEADERS;
 
-    @include_once "{$config['file_root']}/includes/customize-landing-page-l10n.inc.php";
-    @include_once "{$config['file_root']}/{$lang}/includes/header-landing-page-l10n.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/landing-page.inc.php";
 
 ?>
 
@@ -63,5 +62,5 @@ Thunderbird
 
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/footer-pages.inc.php";
 ?>
