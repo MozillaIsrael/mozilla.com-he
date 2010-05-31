@@ -94,6 +94,9 @@
 ;Other Systems and Languages
 מערכות הפעלה ושפות אחרות
 
+;Get Firefox
+קח את Firefox
+
 ;Get Firefox 3
 קח את Firefox 3
 
@@ -208,11 +211,30 @@ MegaBytes
 וידאו
 
 ;Except where otherwise <a href="%s">noted</a>, content on this site is licensed under the <br /><a href="%s">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.
-Except where otherwise <a href="%s">noted</a>, content on this site is licensed under the <br /><a href="%s">Creative Commons Attribution Share-Alike License v3.0</a> or any later version.
+התוכן באתר זה הנו תחת רישיון <a href="%2$s">Creative Commons Attribution Share-Alike License v3.0</a> או גרסאות מאוחרות יותר, אלא אם <a href="%1$s">צויין</a> אחרת.
 
 ;Report Trademark Abuse
 דווח על שימוש לרעה בסימנים רשומים
 
 ;Free Upgrade
 שדרוג חינם
+
+
+;Follow us on:
+עקבו אחרינו:
+
+;Customize with Add-ons
+בצע התאמה אישית עם תוספות
+
+;Sync Your Desktop & Mobile
+סנכרן את המחשב והנייד
+
+;New: Crash Protection
+חדש: הגנה מקריסות
+
+;Continue browsing even when your video or game crashes.
+המשך לגלוש גם כאשר הוידאו או המשחקים שלך קורסים.
+
+;Learn More
+מידע נוסף
 
