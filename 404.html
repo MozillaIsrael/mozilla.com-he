@@ -2,19 +2,19 @@
     // The $body_* variables are for compatibility with pre-existing css
     $page_title = '404: Page Not Found';
     $body_id    = 'mozilla-com';
-	$breadcrumbs = array(
+    $breadcrumbs = array(
                             'Home'           => "/{$lang}/",
                             'Page Not Found' => ""
                         );
     $extra_headers = <<<EXTRA_HEADERS
     <link rel="stylesheet" type="text/css" href="/style/rustico/errors.css" media="screen" />
 EXTRA_HEADERS;
-    @include_once "{$config['file_root']}/{$lang}/includes/header.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/header-pages.inc.php";
 
 ?>
 
     <div id="content">
-      
+
 
 
 <div class="error-notice">
@@ -40,11 +40,11 @@ EXTRA_HEADERS;
 
 
 
-                  
-	  
-      
+
+
+
     </div><!-- end #content div -->
 <?php
     $disable_js_stats = true;
-    @include_once "{$config['file_root']}/{$lang}/includes/footer.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/footer-pages.inc.php";
 ?>
