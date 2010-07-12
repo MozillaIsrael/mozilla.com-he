@@ -7,3 +7,7 @@ RedirectMatch permanent ^/(.*)\/thunderbird/(2\.0\.0\.[0-9]+)/start[/]? http://w
 # fx3 rewrite
 RewriteRule ^firefox/3\.0\.\d{1,2}/firstrun[/]?$ firefox/3/firstrun/ [PT]
 RewriteRule ^firefox/3\.0\.\d{1,2}/whatsnew[/]?$ firefox/3/whatsnew/ [PT]
+
+# fx3.5 rewrite
+RewriteRule ^firefox/3\.5\.\d{1,2}/firstrun[/]?$ firefox/3.5/firstrun/ [PT]
+RewriteRule ^firefox/3\.5\.\d{1,2}/whatsnew[/]?$ firefox/3.5/whatsnew/ [PT]
