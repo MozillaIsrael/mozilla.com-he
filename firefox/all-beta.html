@@ -1,15 +1,8 @@
 <?php
-    // The $body_* variables are for compatibility with pre-existing css
+    // Translate the page title below
     $page_title = 'דפדפן Firefox | עזור לנו לבדוק את גירסת הבטא';
-    $body_id    = 'firefox-all';
-    $body_class = 'locale-'.$lang;
-    $extra_headers = <<<EXTRA_HEADERS
-    <link rel="stylesheet" type="text/css" href="/style/tignish/firefox.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/style/tignish/all.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/style/tignish/all-beta.css" media="screen" />
+    include_once "{$config['file_root']}/includes/l10n/allbeta.inc.php";
 
-EXTRA_HEADERS;
-    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
 <div id="main-feature">
@@ -33,31 +26,12 @@ EXTRA_HEADERS;
 
 <div id="content">
 
-    <script type="text/javascript" src="/js/download.js"></script>
-    <script type="text/javascript">
-    // <![CDATA[
-        var download_parent_override = 'download-button';
-    // ]]>
-    </script>
-    <div id="download-button">
-<?php
-    // php call to display the download box, nothing to translate in the line
-    // below
-    echo $firefoxDetails->getDownloadBlockForLocale($lang,
-        array('ancillary_links' => false, 'download_product' => 'Free Download', 'devel_version' => true) );
-?>
-
-    <p class="download-other">
-        <a class="ancillaryLink" href="<?=LATEST_FIREFOX_DEVEL_VERSION?>/releasenotes/"><?php echo ___('Release Notes').' '.___('(in English)'); ?></a> -
-        <a class="ancillaryLink" href="http://www.mozilla.com/en-US/firefox/all-beta.html#languages"><?php echo ___('Other Systems and Languages'); ?></a>
-    </p>
-
-    </div><!-- end #download-button div -->
+<?php echo $downloadbox; ?>
 
     <p id="no-beta">לא מעוניין בגירסת בטא? הורד את <a href="/<?=$lang?>/firefox/">הגירסה האחרונה של Firefox</a>.</p>
 
 </div><!-- end #content div -->
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+    include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
 ?>
 
