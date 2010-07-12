@@ -1,2 +1,9 @@
+Options +MultiViews -Indexes
+RewriteEngine On
+
 # mozillamessaging redirect
 RedirectMatch permanent ^/(.*)\/thunderbird/(2\.0\.0\.[0-9]+)/start[/]? http://www.mozillamessaging.com/$1/thunderbird/2.0.0.24/start/
+
+# fx3 rewrite
+RewriteRule ^firefox/3\.0\.\d{1,2}/firstrun[/]?$ firefox/3/firstrun/ [PT]
+RewriteRule ^firefox/3\.0\.\d{1,2}/whatsnew[/]?$ firefox/3/whatsnew/ [PT]
