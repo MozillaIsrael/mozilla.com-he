@@ -13,7 +13,7 @@ l10n note: there are 3 cases we have to deal with in the Whatsnew page:
 The text at the top of the page changes depending on the version we detect
 */
 
-@include_once "{$config['file_root']}/includes/headers/3.6/whatsnew-l10n.inc.php";
+include_once "{$config['file_root']}/includes/headers/3.6/whatsnew-l10n.inc.php";
 
 ?>
 
@@ -64,7 +64,7 @@ The text at the top of the page changes depending on the version we detect
 <?php
 
 endif;
-@include_once "{$config['file_root']}/{$lang}/includes/l10n/in-product-3.6.inc.php";
-@include_once "{$config['file_root']}/{$lang}/includes/footers/3.6/portal-pages.inc.php";
+include_once "{$config['file_root']}/{$lang}/includes/l10n/in-product-3.6.inc.php";
+include_once "{$config['file_root']}/includes/footers/3.6/portal-pages.inc.php";
 
 ?>
