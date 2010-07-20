@@ -4,8 +4,8 @@
 $page_title = "Firefox Updated";
 
 
-@include_once "{$config['file_root']}/includes/headers/3.5/whatsnew.inc.php";
-@include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+include_once "{$config['file_root']}/includes/headers/3.5/whatsnew.inc.php";
+include_once "{$config['file_root']}/includes/l10n/header-pages.inc.php";
 $_version       = getVersionBySelf();
 $_valid_version = isValidVersionByReleaseNotes($_version, $config['file_root'], $lang);
 
@@ -120,6 +120,6 @@ if ($_version !== null && $_valid_version) {
 
 <?php
 
-@include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+include_once "{$config['file_root']}/includes/l10n/footer-pages.inc.php";
 
 ?>

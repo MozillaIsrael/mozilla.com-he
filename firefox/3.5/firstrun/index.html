@@ -4,8 +4,8 @@
 $page_title = "ברוכים הבאים ל־Firefox";
 
 
-@include_once "{$config['file_root']}/includes/headers/3.5/firstrun.inc.php";
-@include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+include_once "{$config['file_root']}/includes/headers/3.5/firstrun.inc.php";
+include_once "{$config['file_root']}/includes/l10n/header-pages.inc.php";
 
 
 // L10n: Translate the following HTML chunks, don't forget the alt="Welcome to Firefox 3" attribute for the image, this is
@@ -69,5 +69,5 @@ $page_title = "ברוכים הבאים ל־Firefox";
 
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/footer-pages.inc.php";
 ?>

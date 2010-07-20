@@ -8,9 +8,9 @@
     $no_download_button2 = "(תן לי להסביר לכם מדוע)";
 
 
-    @include_once "{$config['file_root']}/includes/headers/3.0/whatsnew.inc.php";
-    @include_once "{$config['file_root']}/includes/headers/3.0/last30version.inc.php";
-    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+    include_once "{$config['file_root']}/includes/headers/3.0/whatsnew.inc.php";
+    include_once "{$config['file_root']}/includes/headers/3.0/last30version.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/header-pages.inc.php";
 
 ?>
 
@@ -34,5 +34,5 @@
 </div>
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/footer-pages.inc.php";
 ?>

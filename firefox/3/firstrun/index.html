@@ -3,8 +3,8 @@
     $page_title = 'ברוכים הבאים ל־Firefox';
     $extra_feature_text = 'לחץ על לחצן הסגירה בלשונית זו כדי לעבור לדף הבית שלך';
 
-    @include_once "{$config['file_root']}/includes/headers/3.0/firstrun.inc.php";
-    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+    include_once "{$config['file_root']}/includes/headers/3.0/firstrun.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/header-pages.inc.php";
 
 ?>
 
@@ -27,6 +27,6 @@
 </div>
 
 <?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
+    include_once "{$config['file_root']}/includes/l10n/footer-pages.inc.php";
 ?>
 
