@@ -7,7 +7,7 @@
         <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/dalvay/portal-page.css" media="screen" title="Dalvay"/>
         <link rel="stylesheet" type="text/css" href="{$config['static_prefix']}/style/tignish/portal-page-transitional.css" media="screen" title="Dalvay"/>
 EXTRA_HEADERS;
-    @include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
+    include_once "{$config['file_root']}/{$lang}/includes/header-portal-pages.inc.php";
 ?>
 
 <div id="tab-close">
@@ -33,8 +33,8 @@ EXTRA_HEADERS;
     Firefox</a>, או עקוב אחר ההוראות בראש עמוד זה כדי לסגור את הלשונית הזו ולעבור ישירות
     לדף הבית שלך.</p>
 
-    <!--Note: below is only for locales that *DO NOT* ship with a dictionary  --> 
-    <h3>הוסף מילון עברי לבודק האיות</h3> 
+    <!--Note: below is only for locales that *DO NOT* ship with a dictionary  -->
+    <h3>הוסף מילון עברי לבודק האיות</h3>
     <p><a href="https://addons.mozilla.org/he/firefox/2.0.0.1/dictionaries/">התקן מילון כעת</a></p>
 
 
@@ -43,6 +43,4 @@ EXTRA_HEADERS;
 </div> <!-- end .portal-box-interior  -->
 </div> <!-- end .portal-box  -->
 
-<?php
-    @include_once "{$config['file_root']}/{$lang}/includes/footer-portal-pages.inc.php";
-?>
+
