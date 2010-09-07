@@ -1,6 +1,6 @@
 <?php
 
-$sub[1]  = "Hi, this is paul Rouget from Mozilla.";
+$sub[1]  = "Hi, this is Paul Rouget from Mozilla.";
 $sub[2]  = "Today, I would like to show you Firefox 4, the new Beta, which comes with hardware acceleration.";
 $sub[3]  = "And, I want to show you the difference between Firefox 4 with and without hardware acceleration.";
 $sub[4]  = "So here you have a little animation running into Firefox 4 without hardware acceleration.";
