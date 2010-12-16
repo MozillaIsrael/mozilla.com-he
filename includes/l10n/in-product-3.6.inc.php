@@ -1,9 +1,9 @@
 
 <div id="main-content">
 
-  <div class="sub-feature" id="personas">
+  <div class="sub-feature" id="intro">
 
-    <h3>בחר את הפרסונה שלך.</h3>
+    <h2>בחר את הפרסונה שלך.</h2>
     <p id="try">עמוד עלי כדי לנסות, לחיצה כדי להפוך לקבוע</p>
 
     <a href="http://www.getpersonas.com/en-US/gallery/" id="personas-image-link">Personas</a>
@@ -15,13 +15,13 @@
 
     <ul id="personas-link" class="link">
       <li>
-          <a href="http://www.getpersonas.com/en-US/gallery/" id="see-all-personas">הצג הכל (מעל 30,000)</a>
+          <a href="http://www.getpersonas.com/en-US/gallery/" id="see-all-personas">הצג הכל (מעל <?=$personasnumber?>)</a>
       </li>
     </ul>
 </div>
 
-  <div class="sub-feature" id="connect">
-    <h3>השאר מחובר</h3>
+  <div class="sub-feature" id="sidebar">
+    <h2>השאר מחובר</h2>
     <ul class="link">
       <li id="connect-twitter"><a href="http://twitter.com/firefox">עקוב אחרינו ב־Twitter</a></li>
       <li id="connect-facebook"><a href="http://www.facebook.com/Firefox">היה אוהד ב־Facebook</a></li>
@@ -30,7 +30,7 @@
   </div>
 
   <div class="sub-feature<?=$oop_class;?>" id="personalize"><div>
-    <h3>דרכים נוספות להתאמה אישית</h3>
+    <h2>דרכים נוספות להתאמה אישית</h2>
     <p>התאם את Firefox לצורה בה תרצה לגלוש ברשת עם אלפי תוספות חופשיות.</p>
     <ul class="link">
       <li>
@@ -40,6 +40,16 @@
   </div></div>
 
 <?=$oop;?>
+</div>
+<div id="footer">
+    <div id="connect" class="sub-feature">
+        <ul class="link social">
+            <li id="connect-facebook"><a href="http://www.facebook.com/Firefox">Facebook</a></li>
+            <li id="connect-twitter"><a href="http://twitter.com/firefox">Twitter</a></li>
+        </ul>
+    </div>
+</div>
+<div>
 
   <p id="sub-links">
       <a href="/<?=$lang?>/firefox/features/" id="features-link">תכונות נוספות של Firefox 3.6</a>
