@@ -1,3 +1,6 @@
+# these text snippets are mostly used on about:home
+
+
 ;Take Firefox anywhere you go! The latest Firefox for Android is live and ready for you to enjoy. <a href="%s">Get it now</a>.
 קחו את Firefox לכל מקום! הגרסה החדשה של Firefox ל־Android באוויר ומוכנה לשימושכם. קבלו אותה כעת.
 
@@ -29,14 +32,18 @@
 ;Firefox is proudly non-profit and free to innovate on your behalf without compromise. <a href="%s">Learn more</a> about our mission.
 Firefox גאה להיות מיוצר ללא כוונת רווח וחופשי כדי לחדש בשבילכם ללא פשרות. <a href="%s">מידע נוסף</a> על המשימה שלנו.
 
+
 ;Fast, flexible and secure, Firefox is the only browser that puts you first. <a href="%s">Learn more</a> about what makes us different by design.
 מהיר, גמיש ומאובטח, Firefox הוא הדפדפן היחיד ששם אתכם ראשונים. <a href="%s">מידע נוסף</a> על מה שעושה אותנו שונים.
+
 
 ;<a href="%s">Download Firefox on your Android tablet</a> and put the power of the Web right in your hands. Get it now.
 <a href="%s">הורידו את Firefox לאנדרואיד שלכם</a> ושימו את כוח הרשת בידיים שלכם. קחו אותו עכשיו.
 
+
 ;Keep your plugins up to date and stay safe online with <a href="%s">Plugin Check</a>.
 שמרו על התוספים שלכם מעודכנים והישארו מקוונים עם <a href="%s">בודק התוספים</a>.
+
 
 ;Keep your Firefox in style. Dress it up in the latest <a href="%s">Personas</a>.
 תדאגו שה־Firefox שלכם יהיה מסוגנן. הלבישו אותו עם ה<a href="%s">פרסונות</a> החדשות.
@@ -63,11 +70,50 @@ Firefox גאה להיות מיוצר ללא כוונת רווח וחופשי כ�
 
 
 ;Get in early and help shape the future of Firefox. <a href="%s">Download Firefox Aurora.</a>
-עלו מוקדם על הרכבת ועזרו לעצב את העתיד של Firefox. <a href="%s">הורידו את Firefox Aurora</a> 
+עלו מוקדם על הרכבת ועזרו לעצב את העתיד של Firefox. <a href="%s">הורידו את Firefox Aurora</a>
 
 
 ;Firefox for Android is now optimized for the way you browse on tablets. <a href="%s">Get the power of the Web at your fingertips</a>.
 Firefox לאנדרואיד עכשיו מותאם היטב לדרך שבה אתם גולשים במחשבי לוח. <a href="%s">קבלו את כוח הרשת בקצות האצבעות</a>.
 
+
 ;Download Firefox on your Android tablet and put the power of the Web right in your hands. <a href="%s">Get it now</a>.
 <a href="%s">הורידו את Firefox לאנדרואיד שלכם</a> ושימו את כוח הרשת בידיים שלכם. <a href="%s">קחו אותו עכשיו.</a>.
+
+
+;<a href="%">Download Firefox Beta</a>, provide feedback and help make the next Firefox even more awesome for our 450 million users.
+<a href="%">Download Firefox Beta</a>, provide feedback and help make the next Firefox even more awesome for our 450 million users.
+
+
+;Test features, refine and polish them and help us make our next version better than ever. <a href="%">Download Firefox Beta today!</a>
+Test features, refine and polish them and help us make our next version better than ever. <a href="%">Download Firefox Beta today!</a>
+
+
+;Love Firefox? Want to help make our next version even better? <a href="%">Download Firefox Beta</a> and give us feedback today!
+Love Firefox? Want to help make our next version even better? <a href="%">Download Firefox Beta</a> and give us feedback today!
+
+
+;Are you running the latest Firefox Beta? <a href="%">Get it now</a> and help us test the latest features.
+Are you running the latest Firefox Beta? <a href="%">Get it now</a> and help us test the latest features.
+
+
+;Not on the latest Firefox Beta? <a href="%">Get it today</a> to stay on top of what we're working on for our next version.
+Not on the latest Firefox Beta? <a href="%">Get it today</a> to stay on top of what we're working on for our next version.
+
+
+;Want to share your feedback? <a href="%">Find out how</a> and help make the next version of Firefox even more awesome.
+Want to share your feedback? <a href="%">Find out how</a> and help make the next version of Firefox even more awesome.
+
+
+;Firefox Beta users: Don't forget to <a href="%">provide feedback</a> to help us put the final tweaks on our next version.
+Firefox Beta users: Don't forget to <a href="%">provide feedback</a> to help us put the final tweaks on our next version.
+
+
+;Help make the next version of Firefox even more awesome. <a href="%">Become an Affiliate</a> and share Firefox Beta with your friends.
+Help make the next version of Firefox even more awesome. <a href="%">Become an Affiliate</a> and share Firefox Beta with your friends.
+
+
+;Invite friends to preview upcoming Firefox features. <a href="%">Become an Affiliate</a> and share Firefox Aurora today.
+Invite friends to preview upcoming Firefox features. <a href="%">Become an Affiliate</a> and share Firefox Aurora today.
+
+
