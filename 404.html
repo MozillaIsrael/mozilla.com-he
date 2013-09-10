@@ -1,45 +1,44 @@
 <?php
 
     // translate $page_title below
-    $page_title = '404: Page Not Found';
+    $page_title = "404: Page Not Found";
 
     $pageid = '404';
     include_once "{$config['file_root']}/includes/l10n/controller.inc.php";
 ?>
 
-    <div id="content">
 
 
-
-<div class="error-notice">
-
-<h3>אנו מצטערים, אבל לא מצאנו את מה שחיפשת.</h3>
-
-<p>הדף או הקובץ שחיפשת לא קיים עם האתר שלנו. אפשרי שלחצת על קישור שאיננו עדכני או שהקלדת כתובת בצורה שגוייה.</p>
-
-<ul class="spaced">
-<li>אם הקלדת את הכתובת בדוק שוב את האיות.</li>
-<li>אם לחצת על קישור ממקום אחר, בבקשה דווח לנו על כך ב־<a href="mailto:webmaster@mozilla.org" title="Page Not Found on Mozilla.com">webmaster@mozilla.com</a> (באנגלית). ספר לנו מאיפה הגעת ומה חיפשת, ואנחנו נעשה את המירב כדי לתקן זאת.</li>
-</ul>
-
-<p>לחילופין, אתה יכול לקפוץ לאחד מהדפים הפופולרים באתר שלנו.</p>
-
-<ul class="spaced">
-<li>האם חיפשת מידע על <a href="/<?=$lang?>/firefox/">Firefox</a>?</li>
-<li>או תוכנת הדוא"ל שלנו, <a href="/<?=$lang?>/thunderbird/">Thunderbird</a>?</li>
-<li>יכול להיות וכדאי להתחיל ב־<a href="/<?=$lang?>/">www.mozilla.org</a>.</li>
-</ul>
-
+<div id="main-feature">
+    <h2>Hmmm, we’re having trouble finding that one.</h2>
 </div>
 
+<div id="content">
+
+<div id="error-reasons">
+    <h3>אנו מצטערים, אבל לא מצאנו את מה שחיפשת.</h3>
+
+    <ul class="spaced">
+        <li>אם הקלדת את הכתובת בדוק שוב את האיות.</li>
+        <li>אם לחצת על קישור ממקום אחר, בבקשה דווח לנו על כך ב־<a href="mailto:webmaster@mozilla.org" title="Page Not Found on Mozilla.org">webmaster@mozilla.com</a> (באנגלית). ספר לנו מאיפה הגעת ומה חיפשת, ואנחנו נעשה את המירב כדי לתקן זאת.</li>
+    </ul>
+</div>
+
+<div id="error-suggestions">
+    <h3>לחילופין, אתה יכול לקפוץ לאחד מהדפים הפופולרים באתר שלנו.</h3>
+
+    <ul class="spaced">
+        <li>האם חיפשת מידע על <a href="/<?=$lang?>/firefox/">Firefox</a>?</li>
+        <li>או תוכנת הדוא"ל שלנו, <a href="/<?=$lang?>/thunderbird/">Thunderbird</a>?</li>
+        <li>יכול להיות וכדאי להתחיל ב־<a href="/<?=$lang?>/">www.mozilla.org</a>.</li>
+    </ul>
+</div>
+
+</div><!-- end #content div -->
 
 
 
 
-
-    </div><!-- end #content div -->
-
-    
 <?php
   require_once $footerfile;
 ?>
